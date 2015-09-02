@@ -61,84 +61,84 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_b_f": {
     "description": "背景色(ステージ4)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_b_s": {
     "description": "背景色(ステージ2)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_b_t": {
     "description": "背景色(ステージ3)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_g": {
     "description": "背景色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_g_f": {
     "description": "背景色(ステージ4)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_g_s": {
     "description": "背景色(ステージ2)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_g_t": {
     "description": "背景色(ステージ3)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "backcolor_r": {
     "description": "背景色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "backcolor_r_f": {
     "description": "背景色(ステージ4)（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "backcolor_r_s": {
     "description": "背景色(ステージ2)（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "backcolor_r_t": {
     "description": "背景色(ステージ3)（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "boss2_type": {
     "description": "カイオール攻撃パターン",
@@ -10218,42 +10218,42 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "firebar_b2": {
     "description": "ファイヤー系の内側,シーソーと動くT字型とスウィングバーとブランコの板,ロープ,ゆれる棒,人間大砲の台座の色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "firebar_g1": {
     "description": "ファイヤー系の外側,シーソーと動くT字型の支柱,ブランコの鎖の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "firebar_g2": {
     "description": "ファイヤー系の内側,シーソーと動くT字型とスウィングバーとブランコの板,ロープ,ゆれる棒,人間大砲の台座の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "192"
+    "default": "192"
   },
   "firebar_r1": {
     "description": "ファイヤー系の外側,シーソーと動くT字型の支柱,ブランコの鎖の色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "firebar_r2": {
     "description": "ファイヤー系の内側,シーソーと動くT字型とスウィングバーとブランコの板,ロープ,ゆれる棒,人間大砲の台座の色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "fs_item_name1": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前１",
@@ -10394,42 +10394,42 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "grenade_b2": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色2（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "grenade_g1": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色1,破壊光線の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "grenade_g2": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色2（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "grenade_r1": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色1,破壊光線の色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "grenade_r2": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色2（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "grenade_shop_score": {
     "description": "グレネード１発に必要な得点(1-）",
@@ -11256,21 +11256,21 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "kaishi_g": {
     "description": "ステージ番号画面の背景色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "kaishi_r": {
     "description": "ステージ番号画面の背景色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "key1_on_count": {
     "description": "必要なＫＥＹ２の数（1-5）",
@@ -11356,21 +11356,21 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "mizunohadou_g": {
     "description": "水の波動,人間大砲(本体)の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "32"
+    "default": "32"
   },
   "mizunohadou_r": {
     "description": "水の波動,人間大砲(本体)の色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "mizutaro_attack": {
     "description": "ミズタロウの攻撃パターン",
@@ -12358,21 +12358,21 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "255"
+    "default": "255"
   },
   "scorecolor_g": {
     "description": "文字色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "scorecolor_r": {
     "description": "文字色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "value": "0"
+    "default": "0"
   },
   "scroll_area": {
     "description": "スクロール範囲",
