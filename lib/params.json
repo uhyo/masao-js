@@ -2469,8 +2469,8 @@
     "default": "1"
   },
   "control_parts_visible": {
-    "description": "スクロール制御パーツの表示をしない（デバッグ用）",
-    "type": "boolean",
+    "description": "スクロール制御パーツを表示する（デバッグ用）",
+    "type": "boolean-reversed",
     "default": "1"
   },
   "dengeki_mkf": {
@@ -11092,8 +11092,8 @@
     "default": "0"
   },
   "j_fire_equip": {
-    "description": "ファイヤーボールを標準装備しない",
-    "type": "boolean",
+    "description": "ファイヤーボールを標準装備する",
+    "type": "boolean-reversed",
     "default": "1"
   },
   "j_fire_mkf": {
@@ -11140,8 +11140,8 @@
     "default": "4"
   },
   "j_tail_hf": {
-    "description": "しっぽの標準装備をしない",
-    "type": "boolean",
+    "description": "しっぽの標準装備をする",
+    "type": "boolean-reversed",
     "default": "1"
   },
   "j_tail_type": {
@@ -11305,8 +11305,8 @@
     "default": "1"
   },
   "layer_mode": {
-    "description": "背景レイヤーの表示をしない",
-    "type": "boolean",
+    "description": "背景レイヤーを表示する",
+    "type": "boolean-reversed",
     "default": "1"
   },
   "mariri_attack": {
@@ -12578,8 +12578,8 @@
     }
   },
   "second_gazou_visible": {
-    "description": "セカンド画像を使用しない",
-    "type": "boolean",
+    "description": "セカンド画像を使用する",
+    "type": "boolean-reversed",
     "default": "1"
   },
   "serifu1-1": {
@@ -16334,8 +16334,8 @@
     "default": "128"
   },
   "water_clear_switch": {
-    "description": "水の半透明表示をしない",
-    "type": "boolean",
+    "description": "水の半透明表示をする",
+    "type": "boolean-reversed",
     "default": "1"
   },
   "water_visible": {
