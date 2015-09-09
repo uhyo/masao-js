@@ -1,6 +1,6 @@
 {
   "name": "masao",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utilities for Canvas Masao.",
   "main": "index.js",
   "scripts": {

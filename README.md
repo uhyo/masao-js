@@ -20,5 +20,8 @@ Validates a param object `params`. Returns boolean value.
 ## masao.param.cutDefault(params)
 Returns a new object where any field is the same, except the case that its value is the default value.
 
+## masao.param.addDefaults(params)
+Returns a new object with omitted default params attached.
+
 # License
 MIT
