@@ -56,84 +56,84 @@
     "type": "boolean",
     "default": "1"
   },
-  "backcolor_b": {
+  "backcolor_blue": {
     "description": "背景色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_b_f": {
+  "backcolor_blue_f": {
     "description": "背景色(ステージ4)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_b_s": {
+  "backcolor_blue_s": {
     "description": "背景色(ステージ2)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_b_t": {
+  "backcolor_blue_t": {
     "description": "背景色(ステージ3)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_g": {
+  "backcolor_green": {
     "description": "背景色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_g_f": {
+  "backcolor_green_f": {
     "description": "背景色(ステージ4)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_g_s": {
+  "backcolor_green_s": {
     "description": "背景色(ステージ2)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_g_t": {
+  "backcolor_green_t": {
     "description": "背景色(ステージ3)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "backcolor_r": {
+  "backcolor_red": {
     "description": "背景色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "backcolor_r_f": {
+  "backcolor_red_f": {
     "description": "背景色(ステージ4)（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "backcolor_r_s": {
+  "backcolor_red_s": {
     "description": "背景色(ステージ2)（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "backcolor_r_t": {
+  "backcolor_red_t": {
     "description": "背景色(ステージ3)（R）",
     "type": "integer",
     "min": 0,
@@ -243,12 +243,12 @@
     "type": "integer",
     "default": "グラーダ"
   },
-  "boss_name2": {
+  "boss2_name": {
     "description": "ボスのHPゲージに表示する名前2",
     "type": "integer",
     "default": "カイオール"
   },
-  "boss_name3": {
+  "boss3_name": {
     "description": "ボスのHPゲージに表示する名前3",
     "type": "integer",
     "default": "センクウザ"
@@ -10213,42 +10213,42 @@
     ],
     "default": "1"
   },
-  "firebar_b1": {
+  "firebar_blue1": {
     "description": "ファイヤー系の外側,シーソーと動くT字型の支柱,ブランコの鎖の色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "firebar_b2": {
+  "firebar_blue2": {
     "description": "ファイヤー系の内側,シーソーと動くT字型とスウィングバーとブランコの板,ロープ,ゆれる棒,人間大砲の台座の色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "firebar_g1": {
+  "firebar_green1": {
     "description": "ファイヤー系の外側,シーソーと動くT字型の支柱,ブランコの鎖の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "firebar_g2": {
+  "firebar_green2": {
     "description": "ファイヤー系の内側,シーソーと動くT字型とスウィングバーとブランコの板,ロープ,ゆれる棒,人間大砲の台座の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "192"
   },
-  "firebar_r1": {
+  "firebar_red1": {
     "description": "ファイヤー系の外側,シーソーと動くT字型の支柱,ブランコの鎖の色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "firebar_r2": {
+  "firebar_red2": {
     "description": "ファイヤー系の内側,シーソーと動くT字型とスウィングバーとブランコの板,ロープ,ゆれる棒,人間大砲の台座の色（R）",
     "type": "integer",
     "min": 0,
@@ -10389,42 +10389,42 @@
       "gazou_scroll": "11"
     }
   },
-  "grenade_b1": {
+  "grenade_blue1": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色1,破壊光線の色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "grenade_b2": {
+  "grenade_blue2": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色2（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "grenade_g1": {
+  "grenade_green1": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色1,破壊光線の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "grenade_g2": {
+  "grenade_green2": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色2（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "grenade_r1": {
+  "grenade_red1": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色1,破壊光線の色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "grenade_r2": {
+  "grenade_red2": {
     "description": "グレネード,ソーラービーム,ドッスンスンのゴールの色2（R）",
     "type": "integer",
     "min": 0,
@@ -11251,29 +11251,34 @@
     "type": "integer",
     "default": "1"
   },
-  "kaishi_b": {
+  "kaishi_blue": {
     "description": "ステージ番号画面の背景色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "kaishi_g": {
+  "kaishi_green": {
     "description": "ステージ番号画面の背景色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "kaishi_r": {
+  "kaishi_red": {
     "description": "ステージ番号画面の背景色（R）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "key1_on_count": {
-    "description": "必要なＫＥＹ２の数（1-5）",
+  "key1-on-count": {
+    "description": "必要なKEY1の数（1-5）",
+    "type": "integer",
+    "default": "3"
+  },
+  "key2-on-count": {
+    "description": "必要なKEY2の数（1-5）",
     "type": "integer",
     "default": "3"
   },
@@ -12782,112 +12787,112 @@
     "type": "integer",
     "default": "クリス"
   },
-  "serifu_key1_on-1": {
+  "serifu_key1-on-1": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（1行目）",
     "type": "string",
     "default": "ここから先へ進むには、"
   },
-  "serifu_key1_on-10": {
+  "serifu_key1-on-10": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ8",
     "type": "integer",
     "default": "お気を付けて。"
   },
-  "serifu_key1_on-2": {
+  "serifu_key1-on-2": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（2行目）",
     "type": "string",
     "default": "３つのＫＥＹ１が必要です。"
   },
-  "serifu_key1_on-3": {
+  "serifu_key1-on-3": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（3行目）",
     "type": "string",
     "default": "この世界のどこかに、あるはず。"
   },
-  "serifu_key1_on-4": {
+  "serifu_key1-on-4": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ2",
     "type": "integer",
     "default": "ＫＥＹ１を３つ、わたしますか？"
   },
-  "serifu_key1_on-5": {
+  "serifu_key1-on-5": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ3",
     "type": "integer",
     "default": "はい"
   },
-  "serifu_key1_on-6": {
+  "serifu_key1-on-6": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ4",
     "type": "integer",
     "default": "いいえ"
   },
-  "serifu_key1_on-7": {
+  "serifu_key1-on-7": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ5",
     "type": "integer",
     "default": "ＫＥＹ１を３つ、持っていません。"
   },
-  "serifu_key1_on-8": {
+  "serifu_key1-on-8": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ6",
     "type": "integer",
     "default": "先へ進む道が、開けました。"
   },
-  "serifu_key1_on-9": {
+  "serifu_key1-on-9": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ7",
     "type": "integer",
     "default": "勇者殿、"
   },
-  "serifu_key1_on_name": {
+  "serifu_key1-on-name": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人の名前",
     "type": "integer",
     "default": "お姫様"
   },
-  "serifu_key2_on-1": {
+  "serifu_key2-on-1": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（1行目）",
     "type": "string",
     "default": "３つのＫＥＹ２がないと、"
   },
-  "serifu_key2_on-10": {
+  "serifu_key2-on-10": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ8",
     "type": "integer",
     "default": "0"
   },
-  "serifu_key2_on-2": {
+  "serifu_key2-on-2": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（2行目）",
     "type": "string",
     "default": "ここから先へは進めないぜ。"
   },
-  "serifu_key2_on-3": {
+  "serifu_key2-on-3": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（3行目）",
     "type": "string",
     "default": "どこかで見つけてくれ。"
   },
-  "serifu_key2_on-4": {
+  "serifu_key2-on-4": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ2",
     "type": "integer",
     "default": "ＫＥＹ２を３つ、わたしますか？"
   },
-  "serifu_key2_on-5": {
+  "serifu_key2-on-5": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ3",
     "type": "integer",
     "default": "はい"
   },
-  "serifu_key2_on-6": {
+  "serifu_key2-on-6": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ4",
     "type": "integer",
     "default": "いいえ"
   },
-  "serifu_key2_on-7": {
+  "serifu_key2-on-7": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ5",
     "type": "integer",
     "default": "ＫＥＹ２を３つ、持っていません。"
   },
-  "serifu_key2_on-8": {
+  "serifu_key2-on-8": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ6",
     "type": "integer",
     "default": "３つのＫＥＹ２、受け取ったぜ。"
   },
-  "serifu_key2_on-9": {
+  "serifu_key2-on-9": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ7",
     "type": "integer",
     "default": "これで、先へ進めるようになったな。"
   },
-  "serifu_key2_on_name": {
+  "serifu_key2-on-name": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人の名前",
     "type": "integer",
     "default": "ザトシ"
@@ -16389,62 +16394,62 @@
     "type": "integer",
     "default": "0"
   },
-  "ximage1_view_x": {
+  "x_image1_view_x": {
     "description": "Ｘ座標指定画像１ 表示開始Ｘ座標(0-164)",
     "type": "integer",
     "default": "0"
   },
-  "ximage1_x": {
+  "x_image1_x": {
     "description": "Ｘ座標指定画像１ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage1_y": {
+  "x_image1_y": {
     "description": "Ｘ座標指定画像１ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage2_view_x": {
+  "x_image2_view_x": {
     "description": "Ｘ座標指定画像２　表示開始Ｘ座標  (0-164) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage2_x": {
+  "x_image2_x": {
     "description": "Ｘ座標指定画像２ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage2_y": {
+  "x_image2_y": {
     "description": "Ｘ座標指定画像２ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage3_view_x": {
+  "x_image3_view_x": {
     "description": "Ｘ座標指定画像３　表示開始Ｘ座標  (0-164) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage3_x": {
+  "x_image3_x": {
     "description": "Ｘ座標指定画像３ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage3_y": {
+  "x_image3_y": {
     "description": "Ｘ座標指定画像３ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage4_view_x": {
+  "x_image4_view_x": {
     "description": "Ｘ座標指定画像４　表示開始Ｘ座標  (0-164) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage4_x": {
+  "x_image4_x": {
     "description": "Ｘ座標指定画像４ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
     "default": "0"
   },
-  "ximage4_y": {
+  "x_image4_y": {
     "description": "Ｘ座標指定画像４ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
     "default": "0"
