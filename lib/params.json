@@ -11356,21 +11356,21 @@
     "type": "integer",
     "default": "ザトシ"
   },
-  "mizunohadou_b": {
+  "mizunohadou_blue": {
     "description": "水の波動,人間大砲(本体)の色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "mizunohadou_g": {
+  "mizunohadou_green": {
     "description": "水の波動,人間大砲(本体)の色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "32"
   },
-  "mizunohadou_r": {
+  "mizunohadou_red": {
     "description": "水の波動,人間大砲(本体)の色（R）",
     "type": "integer",
     "min": 0,
@@ -12358,21 +12358,21 @@
     "type": "boolean",
     "default": "1"
   },
-  "scorecolor_b": {
+  "scorecolor_blue": {
     "description": "文字色（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "255"
   },
-  "scorecolor_g": {
+  "scorecolor_green": {
     "description": "文字色（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
     "default": "0"
   },
-  "scorecolor_r": {
+  "scorecolor_red": {
     "description": "文字色（R）",
     "type": "integer",
     "min": 0,
