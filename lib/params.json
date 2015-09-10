@@ -240,17 +240,17 @@
   },
   "boss_name": {
     "description": "ボスのHPゲージに表示する名前1",
-    "type": "integer",
+    "type": "string",
     "default": "グラーダ"
   },
   "boss2_name": {
     "description": "ボスのHPゲージに表示する名前2",
-    "type": "integer",
+    "type": "string",
     "default": "カイオール"
   },
   "boss3_name": {
     "description": "ボスのHPゲージに表示する名前3",
-    "type": "integer",
+    "type": "string",
     "default": "センクウザ"
   },
   "boss_type": {
@@ -10257,32 +10257,32 @@
   },
   "fs_item_name1": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前１",
-    "type": "integer",
+    "type": "string",
     "default": "バウンド"
   },
   "fs_item_name2": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前２",
-    "type": "integer",
+    "type": "string",
     "default": "ストレート"
   },
   "fs_item_name3": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前３",
-    "type": "integer",
+    "type": "string",
     "default": "ダブル"
   },
   "fs_name": {
     "description": "ファイヤーボールセレクトの人の名前",
-    "type": "integer",
+    "type": "string",
     "default": "ファイヤーボールセレクトの人"
   },
   "fs_serifu1": {
     "description": "ファイヤーボールセレクトの人のセリフ２",
-    "type": "integer",
+    "type": "string",
     "default": "どのファイヤーボールにしますか？"
   },
   "fs_serifu2": {
     "description": "ファイヤーボールセレクトの人のセリフ３",
-    "type": "integer",
+    "type": "string",
     "default": "を装備しました。"
   },
   "fx_bgm_loop": {
@@ -10496,7 +10496,7 @@
   },
   "hitokoto1_name": {
     "description": "一言メッセージ1 名前",
-    "type": "integer",
+    "type": "string",
     "default": "浩二"
   },
   "hitokoto2-1": {
@@ -10516,7 +10516,7 @@
   },
   "hitokoto2_name": {
     "description": "一言メッセージ2 名前",
-    "type": "integer",
+    "type": "string",
     "default": "お姫様"
   },
   "hitokoto3-1": {
@@ -10536,7 +10536,7 @@
   },
   "hitokoto3_name": {
     "description": "一言メッセージ3 名前",
-    "type": "integer",
+    "type": "string",
     "default": "ザトシ"
   },
   "hitokoto4-1": {
@@ -10556,7 +10556,7 @@
   },
   "hitokoto4_name": {
     "description": "一言メッセージ4 名前",
-    "type": "integer",
+    "type": "string",
     "default": "クリス"
   },
   "j_add_tokugi": {
@@ -11131,7 +11131,7 @@
   },
   "j_hp_name": {
     "description": "HPの名前",
-    "type": "integer",
+    "type": "string",
     "default": "HP"
   },
   "j_tail_ap_boss": {
@@ -11348,12 +11348,12 @@
   },
   "mes1_name": {
     "description": "ヘルメットかドリルをくれる人,メッセージの人1の名前",
-    "type": "integer",
+    "type": "string",
     "default": "お姫様"
   },
   "mes2_name": {
     "description": "グレネードかジェットをくれる人,メッセージの人2の名前",
-    "type": "integer",
+    "type": "string",
     "default": "ザトシ"
   },
   "mizunohadou_blue": {
@@ -11406,27 +11406,27 @@
   },
   "moji_grenade": {
     "description": "GRENADE の文字",
-    "type": "integer",
+    "type": "string",
     "default": "GRENADE"
   },
   "moji_highscore": {
     "description": "HIGHSCORE の文字",
-    "type": "integer",
+    "type": "string",
     "default": "HIGHSCORE"
   },
   "moji_jet": {
     "description": "JET の文字",
-    "type": "integer",
+    "type": "string",
     "default": "JET"
   },
   "moji_left": {
     "description": "LEFT の文字",
-    "type": "integer",
+    "type": "string",
     "default": "LEFT"
   },
   "moji_score": {
     "description": "SCORE の文字",
-    "type": "integer",
+    "type": "string",
     "default": "SCORE"
   },
   "moji_size": {
@@ -11436,12 +11436,12 @@
   },
   "moji_time": {
     "description": "TIME の文字",
-    "type": "integer",
+    "type": "string",
     "default": "TIME"
   },
   "now_loading": {
     "description": "起動中メッセージ",
-    "type": "integer",
+    "type": "string",
     "default": "ただいまファイルを読み込み中。しばらくお待ち下さい。"
   },
   "oriboss_anime_type": {
@@ -12769,22 +12769,22 @@
   },
   "serifu_grenade_shop-4": {
     "description": "得点でグレネードを売る人のセリフ2",
-    "type": "integer",
+    "type": "string",
     "default": "何発にしますか？"
   },
   "serifu_grenade_shop-5": {
     "description": "得点でグレネードを売る人のセリフ3",
-    "type": "integer",
+    "type": "string",
     "default": "得点が、足りません。"
   },
   "serifu_grenade_shop-6": {
     "description": "得点でグレネードを売る人のセリフ4",
-    "type": "integer",
+    "type": "string",
     "default": "グレネードを手に入れた。"
   },
   "serifu_grenade_shop_name": {
     "description": "得点でグレネードを売る人の名前",
-    "type": "integer",
+    "type": "string",
     "default": "クリス"
   },
   "serifu_key1-on-1": {
@@ -12794,7 +12794,7 @@
   },
   "serifu_key1-on-10": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ8",
-    "type": "integer",
+    "type": "string",
     "default": "お気を付けて。"
   },
   "serifu_key1-on-2": {
@@ -12809,37 +12809,37 @@
   },
   "serifu_key1-on-4": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ2",
-    "type": "integer",
+    "type": "string",
     "default": "ＫＥＹ１を３つ、わたしますか？"
   },
   "serifu_key1-on-5": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ3",
-    "type": "integer",
+    "type": "string",
     "default": "はい"
   },
   "serifu_key1-on-6": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ4",
-    "type": "integer",
+    "type": "string",
     "default": "いいえ"
   },
   "serifu_key1-on-7": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ5",
-    "type": "integer",
+    "type": "string",
     "default": "ＫＥＹ１を３つ、持っていません。"
   },
   "serifu_key1-on-8": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ6",
-    "type": "integer",
+    "type": "string",
     "default": "先へ進む道が、開けました。"
   },
   "serifu_key1-on-9": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ7",
-    "type": "integer",
+    "type": "string",
     "default": "勇者殿、"
   },
   "serifu_key1-on-name": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人の名前",
-    "type": "integer",
+    "type": "string",
     "default": "お姫様"
   },
   "serifu_key2-on-1": {
@@ -12849,7 +12849,7 @@
   },
   "serifu_key2-on-10": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ8",
-    "type": "integer",
+    "type": "string",
     "default": "0"
   },
   "serifu_key2-on-2": {
@@ -12864,107 +12864,107 @@
   },
   "serifu_key2-on-4": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ2",
-    "type": "integer",
+    "type": "string",
     "default": "ＫＥＹ２を３つ、わたしますか？"
   },
   "serifu_key2-on-5": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ3",
-    "type": "integer",
+    "type": "string",
     "default": "はい"
   },
   "serifu_key2-on-6": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ4",
-    "type": "integer",
+    "type": "string",
     "default": "いいえ"
   },
   "serifu_key2-on-7": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ5",
-    "type": "integer",
+    "type": "string",
     "default": "ＫＥＹ２を３つ、持っていません。"
   },
   "serifu_key2-on-8": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ6",
-    "type": "integer",
+    "type": "string",
     "default": "３つのＫＥＹ２、受け取ったぜ。"
   },
   "serifu_key2-on-9": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ7",
-    "type": "integer",
+    "type": "string",
     "default": "これで、先へ進めるようになったな。"
   },
   "serifu_key2-on-name": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人の名前",
-    "type": "integer",
+    "type": "string",
     "default": "ザトシ"
   },
   "setumei_menu1": {
     "description": "説明する人メニュー前置き",
-    "type": "integer",
+    "type": "string",
     "default": "なんでも、質問してくれたまえよ。"
   },
   "setumei_menu2": {
     "description": "説明する人メニュー1",
-    "type": "integer",
+    "type": "string",
     "default": "ファイヤーボール"
   },
   "setumei_menu3": {
     "description": "説明する人メニュー2",
-    "type": "integer",
+    "type": "string",
     "default": "バリア"
   },
   "setumei_menu4": {
     "description": "説明する人メニュー3",
-    "type": "integer",
+    "type": "string",
     "default": "ジェット"
   },
   "setumei_name": {
     "description": "説明する人(地図)",
-    "type": "integer",
+    "type": "string",
     "default": "キドはかせ"
   },
   "shop_item_name1": {
     "description": "店にあるアイテム(1)",
-    "type": "integer",
+    "type": "string",
     "default": "グレネード３発"
   },
   "shop_item_name2": {
     "description": "店にあるアイテム(2)",
-    "type": "integer",
+    "type": "string",
     "default": "ジェット"
   },
   "shop_item_name3": {
     "description": "店にあるアイテム(3)",
-    "type": "integer",
+    "type": "string",
     "default": "ドリル"
   },
   "shop_item_name4": {
     "description": "店にあるアイテム(4)",
-    "type": "integer",
+    "type": "string",
     "default": "ヘルメット"
   },
   "shop_item_name5": {
     "description": "店にあるアイテム(5)",
-    "type": "integer",
+    "type": "string",
     "default": "しっぽ"
   },
   "shop_item_name6": {
     "description": "店にあるアイテム(6)",
-    "type": "integer",
+    "type": "string",
     "default": "バリア"
   },
   "shop_item_name7": {
     "description": "店にあるアイテム(7)",
-    "type": "integer",
+    "type": "string",
     "default": "ファイヤーボール"
   },
   "shop_item_name8": {
     "description": "店にあるアイテム(8)",
-    "type": "integer",
+    "type": "string",
     "default": "１ｕｐ"
   },
   "shop_item_name9": {
     "description": "店にあるアイテム(9)",
-    "type": "integer",
+    "type": "string",
     "default": "制限時間増加"
   },
   "shop_item_teika1": {
@@ -13014,37 +13014,37 @@
   },
   "shop_name": {
     "description": "ショップ店員",
-    "type": "integer",
+    "type": "string",
     "default": "店員さん"
   },
   "shop_serifu1": {
     "description": "ショップ店員セリフその他(1)",
-    "type": "integer",
+    "type": "string",
     "default": "どれになさいますか？"
   },
   "shop_serifu2": {
     "description": "ショップ店員セリフその他(2)",
-    "type": "integer",
+    "type": "string",
     "default": "で、よろしいですか？"
   },
   "shop_serifu3": {
     "description": "ショップ店員セリフその他(3)",
-    "type": "integer",
+    "type": "string",
     "default": "はい"
   },
   "shop_serifu4": {
     "description": "ショップ店員セリフその他(4)",
-    "type": "integer",
+    "type": "string",
     "default": "いいえ"
   },
   "shop_serifu5": {
     "description": "ショップ店員セリフその他(5)",
-    "type": "integer",
+    "type": "string",
     "default": "を、装備した。"
   },
   "shop_serifu6": {
     "description": "ショップ店員セリフその他(6)",
-    "type": "integer",
+    "type": "string",
     "default": "ＳＣＯＲＥが、足りません。"
   },
   "stage_kaishi": {
@@ -16300,22 +16300,22 @@
   },
   "url1": {
     "description": "リンク土管1の移動先",
-    "type": "integer",
+    "type": "string",
     "default": "http://www.t3.rim.or.jp/~naoto/naoto.html"
   },
   "url2": {
     "description": "リンク土管2の移動先",
-    "type": "integer",
+    "type": "string",
     "default": "http://www.t3.rim.or.jp/~naoto/j_con/index.html"
   },
   "url3": {
     "description": "リンク土管3の移動先",
-    "type": "integer",
+    "type": "string",
     "default": "http://www.t3.rim.or.jp/~naoto/naoto.html"
   },
   "url4": {
     "description": "リンク土管4の移動先",
-    "type": "integer",
+    "type": "string",
     "default": "http://www.t3.rim.or.jp/~naoto/j_con/index.html"
   },
   "view_move_type": {
