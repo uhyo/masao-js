@@ -1,4 +1,4 @@
-# masao v0.0.1
+# masao v0.0.5
 
 ```sh
 npm install masao
