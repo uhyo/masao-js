@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/uhyo/masao-js/issues"
   },
-  "homepage": "https://github.com/uhyo/masao-js"
+  "homepage": "https://github.com/uhyo/masao-js",
+  "dependencies": {
+    "extend": "^3.0.0"
+  }
 }
