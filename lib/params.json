@@ -141,7 +141,7 @@
     "default": "0"
   },
   "boss2_type": {
-    "description": "カイオール攻撃パターン",
+    "description": "カイオールの攻撃パターン",
     "type": "enum",
     "enumValues": [
       {
@@ -180,7 +180,7 @@
     "default": "1"
   },
   "boss3_type": {
-    "description": "センクウザ攻撃パターン",
+    "description": "センクウザの攻撃パターン",
     "type": "enum",
     "enumValues": [
       {
@@ -239,22 +239,22 @@
     "default": "20"
   },
   "boss_name": {
-    "description": "ボスのHPゲージに表示する名前1",
+    "description": "ボス1のHPゲージに表示する名前",
     "type": "string",
     "default": "グラーダ"
   },
   "boss2_name": {
-    "description": "ボスのHPゲージに表示する名前2",
+    "description": "ボス2のHPゲージに表示する名前",
     "type": "string",
     "default": "カイオール"
   },
   "boss3_name": {
-    "description": "ボスのHPゲージに表示する名前3",
+    "description": "ボス3のHPゲージに表示する名前",
     "type": "string",
     "default": "センクウザ"
   },
   "boss_type": {
-    "description": "グラーダ攻撃パターン",
+    "description": "グラーダの攻撃パターン",
     "type": "enum",
     "enumValues": [
       {
@@ -10286,7 +10286,7 @@
     "default": "を装備しました。"
   },
   "fx_bgm_loop": {
-    "description": "BGMのループ再生",
+    "description": "BGMをループ再生する",
     "type": "boolean",
     "default": "1"
   },
@@ -10296,7 +10296,7 @@
     "default": "2"
   },
   "game_speed": {
-    "description": "ゲームの進行スピード(10-300,小さいほど早い)",
+    "description": "ゲームの進行スピード（小さいほど早い）",
     "type": "integer",
     "min": 10,
     "max": 300,
@@ -10432,8 +10432,9 @@
     "default": "255"
   },
   "grenade_shop_score": {
-    "description": "グレネード１発に必要な得点(1-）",
+    "description": "グレネード１発に必要な得点",
     "type": "integer",
+    "min": 1,
     "default": "20"
   },
   "grenade_type": {
@@ -10480,82 +10481,82 @@
     "default": "1"
   },
   "hitokoto1-1": {
-    "description": "一言メッセージ1 セリフ（1行目）",
+    "description": "一言メッセージ1のセリフ（1行目）",
     "type": "string",
     "default": "今日は、いい天気だなあ、なんてね。"
   },
   "hitokoto1-2": {
-    "description": "一言メッセージ1 セリフ（2行目）",
+    "description": "一言メッセージ1のセリフ（2行目）",
     "type": "string",
     "default": "プレイ画面でも、こんなセリフを、"
   },
   "hitokoto1-3": {
-    "description": "一言メッセージ1 セリフ（3行目）",
+    "description": "一言メッセージ1のセリフ（3行目）",
     "type": "string",
     "default": "入れられるように、なったんだ。"
   },
   "hitokoto1_name": {
-    "description": "一言メッセージ1 名前",
+    "description": "一言メッセージ1の名前",
     "type": "string",
     "default": "浩二"
   },
   "hitokoto2-1": {
-    "description": "一言メッセージ2 セリフ（1行目）",
+    "description": "一言メッセージ2のセリフ（1行目）",
     "type": "string",
     "default": "ついに、ここまで来ましたね。"
   },
   "hitokoto2-2": {
-    "description": "一言メッセージ2 セリフ（2行目）",
+    "description": "一言メッセージ2のセリフ（2行目）",
     "type": "string",
     "default": "ゆうきの証、ミレニアム人面星が"
   },
   "hitokoto2-3": {
-    "description": "一言メッセージ2 セリフ（3行目）",
+    "description": "一言メッセージ2のセリフ（3行目）",
     "type": "string",
     "default": "あなたを、待っていますよ。"
   },
   "hitokoto2_name": {
-    "description": "一言メッセージ2 名前",
+    "description": "一言メッセージ2の名前",
     "type": "string",
     "default": "お姫様"
   },
   "hitokoto3-1": {
-    "description": "一言メッセージ3 セリフ（1行目）",
+    "description": "一言メッセージ3のセリフ（1行目）",
     "type": "string",
     "default": "俺は、世界一になる男だ。"
   },
   "hitokoto3-2": {
-    "description": "一言メッセージ3 セリフ（2行目）",
+    "description": "一言メッセージ3のセリフ（2行目）",
     "type": "string",
     "default": "ぜったい、なってやるーー。"
   },
   "hitokoto3-3": {
-    "description": "一言メッセージ3 セリフ（3行目）",
+    "description": "一言メッセージ3のセリフ（3行目）",
     "type": "string",
     "default": "0"
   },
   "hitokoto3_name": {
-    "description": "一言メッセージ3 名前",
+    "description": "一言メッセージ3の名前",
     "type": "string",
     "default": "ザトシ"
   },
   "hitokoto4-1": {
-    "description": "一言メッセージ4 セリフ（1行目）",
+    "description": "一言メッセージ4のセリフ（1行目）",
     "type": "string",
     "default": "あたし、クリス。ペットのピカチーが、"
   },
   "hitokoto4-2": {
-    "description": "一言メッセージ4 セリフ（2行目）",
+    "description": "一言メッセージ4のセリフ（2行目）",
     "type": "string",
     "default": "どこかに行っちゃったの。"
   },
   "hitokoto4-3": {
-    "description": "一言メッセージ4 セリフ（3行目）",
+    "description": "一言メッセージ4のセリフ（3行目）",
     "type": "string",
     "default": "こまったわね、ぐすん。"
   },
   "hitokoto4_name": {
-    "description": "一言メッセージ4 名前",
+    "description": "一言メッセージ4の名前",
     "type": "string",
     "default": "クリス"
   },
@@ -11087,8 +11088,9 @@
     "default": "1"
   },
   "j_equip_grenade": {
-    "description": "グレネード装備数",
+    "description": "グレネードの装備数",
     "type": "integer",
+    "min": 0,
     "default": "0"
   },
   "j_fire_equip": {
@@ -11097,12 +11099,12 @@
     "default": "1"
   },
   "j_fire_mkf": {
-    "description": "水中でファイアボールが使えない",
-    "type": "boolean",
+    "description": "水中でもファイアボールが使える",
+    "type": "boolean-reversed",
     "default": "2"
   },
   "j_fire_type": {
-    "description": "ファイヤーボールの種類（初期値）",
+    "description": "ファイヤーボールの種類",
     "type": "enum",
     "enumValues": [
       {
@@ -11125,17 +11127,17 @@
     "default": "1"
   },
   "j_hp": {
-    "description": "HP",
+    "description": "主人公のHP",
     "type": "integer",
     "default": "0"
   },
   "j_hp_name": {
-    "description": "HPの名前",
+    "description": "主人公のHPの名前",
     "type": "string",
     "default": "HP"
   },
   "j_tail_ap_boss": {
-    "description": "しっぽの攻撃力　ボス用",
+    "description": "しっぽの攻撃力（ボス用）",
     "type": "integer",
     "default": "4"
   },
@@ -11430,8 +11432,10 @@
     "default": "SCORE"
   },
   "moji_size": {
-    "description": "文字の大きさ(8-30)",
+    "description": "文字の大きさ",
     "type": "integer",
+    "min": 8,
+    "max": 30,
     "default": "14"
   },
   "moji_time": {
@@ -11475,7 +11479,7 @@
     "default": "1"
   },
   "oriboss_fumeru_f": {
-    "description": "オリジナルボス　主人公と重なった場合",
+    "description": "オリジナルボスが主人公と重なった場合の動作",
     "type": "enum",
     "enumValues": [
       {
@@ -11498,13 +11502,15 @@
     "default": "1"
   },
   "oriboss_height": {
-    "description": "オリジナルボスの高さ（32-）",
+    "description": "オリジナルボスの高さ",
     "type": "integer",
+    "min": 32,
     "default": "64"
   },
   "oriboss_hp": {
-    "description": "オリジナルボスのHP（1-）",
+    "description": "オリジナルボスのHP",
     "type": "integer",
+    "min": 1,
     "default": "20"
   },
   "oriboss_name": {
@@ -11513,12 +11519,13 @@
     "default": "ボスのHP"
   },
   "oriboss_speed": {
-    "description": "オリジナルボスの速度（1-）",
+    "description": "オリジナルボスの速度",
     "type": "integer",
+    "min": 1,
     "default": "4"
   },
   "oriboss_tail_f": {
-    "description": "オリジナルボス　主人公のしっぽ攻撃を有効にする",
+    "description": "オリジナルボスに主人公のしっぽ攻撃を有効にする",
     "type": "boolean",
     "default": "1"
   },
@@ -11848,8 +11855,9 @@
     "default": "1"
   },
   "oriboss_waza1_wait": {
-    "description": "オリジナルボス1の技の使用後の待機時間（1-）",
+    "description": "オリジナルボス1の技の使用後の待機時間",
     "type": "integer",
+    "min": 1,
     "default": "1"
   },
   "oriboss_waza2": {
@@ -12044,8 +12052,9 @@
     "default": "1"
   },
   "oriboss_waza2_wait": {
-    "description": "オリジナルボス2の技の使用後の待機時間（1-）",
+    "description": "オリジナルボス2の技の使用後の待機時間",
     "type": "integer",
+    "min": 1,
     "default": "1"
   },
   "oriboss_waza3": {
@@ -12240,8 +12249,9 @@
     "default": "1"
   },
   "oriboss_waza3_wait": {
-    "description": "オリジナルボス3の技の使用後の待機時間（1-）",
+    "description": "オリジナルボス3の技の使用後の待機時間",
     "type": "integer",
+    "min": 1,
     "default": "1"
   },
   "oriboss_waza_select": {
@@ -12297,18 +12307,23 @@
     "default": "1"
   },
   "oriboss_width": {
-    "description": "オリジナルボスの幅（32-）",
+    "description": "オリジナルボスの幅",
     "type": "integer",
+    "min": 32,
     "default": "64"
   },
   "oriboss_x": {
-    "description": "オリジナルボスの設置Ｘ座標（0-179）",
+    "description": "オリジナルボスの設置Ｘ座標",
     "type": "integer",
+    "min": 0,
+    "max": 179,
     "default": "20"
   },
   "oriboss_y": {
-    "description": "オリジナルボスの設置Ｙ座標（0-29）",
+    "description": "オリジナルボスの設置Ｙ座標",
     "type": "integer",
+    "min": 0,
+    "max": 29,
     "default": "24"
   },
   "pause_switch": {
@@ -12354,7 +12369,7 @@
     "default": "0"
   },
   "score_v": {
-    "description": "得点の表示",
+    "description": "得点を表示する",
     "type": "boolean",
     "default": "1"
   },
@@ -12603,47 +12618,47 @@
     "default": "0"
   },
   "serifu10-1": {
-    "description": "説明する人セリフ2（1行目）",
+    "description": "説明する人のセリフ2（1行目）",
     "type": "string",
     "default": "黄色いチューリップのアイテムと言えば、"
   },
   "serifu10-2": {
-    "description": "説明する人セリフ2（2行目）",
+    "description": "説明する人のセリフ2（2行目）",
     "type": "string",
     "default": "そう、ファイヤーボールじゃな。はなれた"
   },
   "serifu10-3": {
-    "description": "説明する人セリフ2（3行目）",
+    "description": "説明する人のセリフ2（3行目）",
     "type": "string",
     "default": "敵を攻撃できるという、大変便利なものじゃ。"
   },
   "serifu11-1": {
-    "description": "説明する人セリフ3（1行目）",
+    "description": "説明する人のセリフ3（1行目）",
     "type": "string",
     "default": "ピンクのキノコのアイテムと言えば、そう、"
   },
   "serifu11-2": {
-    "description": "説明する人セリフ3（2行目）",
+    "description": "説明する人のセリフ3（2行目）",
     "type": "string",
     "default": "バリアじゃな。体当たりで敵を倒せるが、うっかり"
   },
   "serifu11-3": {
-    "description": "説明する人セリフ3（3行目）",
+    "description": "説明する人のセリフ3（3行目）",
     "type": "string",
     "default": "して、時間切れを忘れぬよう、注意が必要じゃ。"
   },
   "serifu12-1": {
-    "description": "説明する人セリフ4（1行目）",
+    "description": "説明する人のセリフ4（1行目）",
     "type": "string",
     "default": "ロケットの形のアイテムと言えば、そう、ジェット"
   },
   "serifu12-2": {
-    "description": "説明する人セリフ4（2行目）",
+    "description": "説明する人のセリフ4（2行目）",
     "type": "string",
     "default": "じゃな。空中で、スペースキーを押せば、さらに"
   },
   "serifu12-3": {
-    "description": "説明する人セリフ4（3行目）",
+    "description": "説明する人のセリフ4（3行目）",
     "type": "string",
     "default": "上昇できる。燃料切れには、気を付けるのじゃぞ。"
   },
@@ -12693,17 +12708,17 @@
     "default": "0"
   },
   "serifu5-1": {
-    "description": "ショップ店員セリフ1（1行目）",
+    "description": "ショップ店員のセリフ1（1行目）",
     "type": "string",
     "default": "いらっしゃいませ。"
   },
   "serifu5-2": {
-    "description": "ショップ店員セリフ1（2行目）",
+    "description": "ショップ店員のセリフ1（2行目）",
     "type": "string",
     "default": "当店では、ＳＣＯＲＥと、アイテムを、"
   },
   "serifu5-3": {
-    "description": "ショップ店員セリフ1（3行目）",
+    "description": "ショップ店員のセリフ1（3行目）",
     "type": "string",
     "default": "交換いたします。"
   },
@@ -12723,32 +12738,32 @@
     "default": "何度でも選べますよ。"
   },
   "serifu8-1": {
-    "description": "ショップ店員セリフ(地図)（1行目）",
+    "description": "ショップ店員のセリフ(地図)（1行目）",
     "type": "string",
     "default": "本日の営業は、終了しました。"
   },
   "serifu8-2": {
-    "description": "ショップ店員セリフ(地図)（2行目）",
+    "description": "ショップ店員のセリフ(地図)（2行目）",
     "type": "string",
     "default": "またのご来店を、"
   },
   "serifu8-3": {
-    "description": "ショップ店員セリフ(地図)（3行目）",
+    "description": "ショップ店員のセリフ(地図)（3行目）",
     "type": "string",
     "default": "こころより、お待ちしております。"
   },
   "serifu9-1": {
-    "description": "説明する人セリフ1（1行目）",
+    "description": "説明する人のセリフ1（1行目）",
     "type": "string",
     "default": "よく来た。わしは、キドはかせ。"
   },
   "serifu9-2": {
-    "description": "説明する人セリフ1（2行目）",
+    "description": "説明する人のセリフ1（2行目）",
     "type": "string",
     "default": "アイテムの研究をしており、みんなから、"
   },
   "serifu9-3": {
-    "description": "説明する人セリフ1（3行目）",
+    "description": "説明する人のセリフ1（3行目）",
     "type": "string",
     "default": "アイテムはかせと呼ばれて、したわれておるよ。"
   },
@@ -12918,7 +12933,7 @@
     "default": "ジェット"
   },
   "setumei_name": {
-    "description": "説明する人(地図)",
+    "description": "説明する人(地図)の名前",
     "type": "string",
     "default": "キドはかせ"
   },
@@ -13018,32 +13033,32 @@
     "default": "店員さん"
   },
   "shop_serifu1": {
-    "description": "ショップ店員セリフその他(1)",
+    "description": "ショップ店員のセリフその他(1)",
     "type": "string",
     "default": "どれになさいますか？"
   },
   "shop_serifu2": {
-    "description": "ショップ店員セリフその他(2)",
+    "description": "ショップ店員のセリフその他(2)",
     "type": "string",
     "default": "で、よろしいですか？"
   },
   "shop_serifu3": {
-    "description": "ショップ店員セリフその他(3)",
+    "description": "ショップ店員のセリフその他(3)",
     "type": "string",
     "default": "はい"
   },
   "shop_serifu4": {
-    "description": "ショップ店員セリフその他(4)",
+    "description": "ショップ店員のセリフその他(4)",
     "type": "string",
     "default": "いいえ"
   },
   "shop_serifu5": {
-    "description": "ショップ店員セリフその他(5)",
+    "description": "ショップ店員のセリフその他(5)",
     "type": "string",
     "default": "を、装備した。"
   },
   "shop_serifu6": {
-    "description": "ショップ店員セリフその他(6)",
+    "description": "ショップ店員のセリフその他(6)",
     "type": "string",
     "default": "ＳＣＯＲＥが、足りません。"
   },
@@ -13073,7 +13088,7 @@
     "default": "1"
   },
   "suberuyuka_hkf": {
-    "description": "ドリル等ですべる床を破壊できるか",
+    "description": "ドリル等ですべる床を破壊できる",
     "type": "boolean",
     "default": "1"
   },
@@ -13105,8 +13120,9 @@
     "default": "1"
   },
   "time_max": {
-    "description": "制限時間",
+    "description": "制限時間（0で無制限）",
     "type": "integer",
+    "min": 0,
     "default": "0"
   },
   "ugokuyuka1_type": {
@@ -16334,8 +16350,10 @@
     "default": "1"
   },
   "water_clear_level": {
-    "description": "水の透明度(0-255)",
+    "description": "水の透明度",
     "type": "integer",
+    "min": 0,
+    "max": 255,
     "default": "128"
   },
   "water_clear_switch": {
