@@ -24,37 +24,58 @@
         "description": "左右に動いて爆弾投下"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2"]
+    }
   },
   "audio_bgm_switch_mp3": {
     "description": "MP3形式の音声ファイルをBGMに使う",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "audio_bgm_switch_ogg": {
     "description": "Ogg形式の音声ファイルをBGMに使う",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "audio_bgm_switch_wave": {
     "description": "Wave形式の音声ファイルをBGMに使う",
     "type": "boolean",
-    "default": "2"
+    "default": "2",
+    "version": {
+        "2.8": false
+    }
   },
   "audio_se_switch_mp3": {
     "description": "MP3形式の音声ファイルを効果音に使う",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "audio_se_switch_ogg": {
     "description": "Ogg形式の音声ファイルを効果音に使う",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "audio_se_switch_wave": {
     "description": "Wave形式の音声ファイルを効果音に使う",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "backcolor_blue": {
     "description": "背景色（B）",
@@ -177,7 +198,10 @@
         "description": "水の波動  直進"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2"]
+    }
   },
   "boss3_type": {
     "description": "センクウザの攻撃パターン",
@@ -216,7 +240,10 @@
         "description": "回転ジャンプ"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2","3","4"]
+    }
   },
   "boss_destroy_type": {
     "description": "ボスの倒し方",
@@ -231,27 +258,42 @@
         "description": "ファイヤーボール,しっぽ"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "boss_hp_max": {
     "description": "ボスのHP(倒し方がしっぽなどの場合)",
     "type": "integer",
-    "default": "20"
+    "default": "20",
+    "version": {
+        "2.8": false
+    }
   },
   "boss_name": {
     "description": "ボス1のHPゲージに表示する名前",
     "type": "string",
-    "default": "グラーダ"
+    "default": "グラーダ",
+    "version": {
+        "2.8": false
+    }
   },
   "boss2_name": {
     "description": "ボス2のHPゲージに表示する名前",
     "type": "string",
-    "default": "カイオール"
+    "default": "カイオール",
+    "version": {
+        "2.8": false
+    }
   },
   "boss3_name": {
     "description": "ボス3のHPゲージに表示する名前",
     "type": "string",
-    "default": "センクウザ"
+    "default": "センクウザ",
+    "version": {
+        "2.8": false
+    }
   },
   "boss_type": {
     "description": "グラーダの攻撃パターン",
@@ -278,7 +320,10 @@
         "description": "がんせきほう"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2","3","4"]
+    }
   },
   "chikorin_attack": {
     "description": "チコリンの攻撃パターン",
@@ -321,7 +366,10 @@
         "description": "ソーラービーム 右へ発射"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "clear_type": {
     "description": "ステージクリア条件",
@@ -340,7 +388,10 @@
         "description": "コイン全部で脱出ハシゴ出現"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "coin1_type": {
     "description": "コインが出る？ブロックのタイプ",
@@ -1403,7 +1454,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "coin3_type": {
     "description": "コイン３枚が出る？ブロックのタイプ",
@@ -2466,12 +2520,18 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "control_parts_visible": {
     "description": "スクロール制御パーツを表示する（デバッグ用）",
     "type": "boolean-reversed",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "dengeki_mkf": {
     "description": "ピカチーの攻撃パターン",
@@ -2498,7 +2558,10 @@
         "description": "プラズマ砲"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2"]
+    }
   },
   "dokan1_type": {
     "description": "リンク土管１のタイプ",
@@ -3561,7 +3624,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "dokan2_type": {
     "description": "リンク土管２のタイプ",
@@ -4624,7 +4690,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "dokan3_type": {
     "description": "リンク土管３のタイプ",
@@ -5687,7 +5756,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "dokan4_type": {
     "description": "リンク土管４のタイプ",
@@ -6750,7 +6822,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "dokan_mode": {
     "description": "リンク土管の動作",
@@ -7834,7 +7909,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "easy_mode": {
     "description": "イージーモードにするか",
@@ -7849,7 +7927,10 @@
         "description": "敵の端を踏んでも倒せる"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_chizu": {
     "description": "地図画面の背景のファイル名",
@@ -7861,35 +7942,59 @@
   },
   "filename_fx_bgm_boss": {
     "description": "ボスBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_chizu": {
     "description": "地図画面のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_ending": {
     "description": "エンディング画面のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_stage1": {
     "description": "ステージ１のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_stage2": {
     "description": "ステージ2のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_stage3": {
     "description": "ステージ3のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_stage4": {
     "description": "ステージ4のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_fx_bgm_title": {
     "description": "タイトル画面のBGM",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_gameover": {
     "description": "ゲームオーバー画面のファイル名",
@@ -7897,47 +8002,86 @@
   },
   "filename_haikei": {
     "description": "ステージ1背景のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_haikei2": {
     "description": "ステージ2背景のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_haikei3": {
     "description": "ステージ3背景のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_haikei4": {
     "description": "ステージ4背景のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_mapchip": {
     "description": "背景レイヤーチップのファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_oriboss_left1": {
     "description": "オリジナルボスの画像　左向き1",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_oriboss_left2": {
     "description": "オリジナルボスの画像　左向き2",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_oriboss_right1": {
     "description": "オリジナルボスの画像　右向き1",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_oriboss_right2": {
     "description": "オリジナルボスの画像　右向き2",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_oriboss_tubure_left": {
     "description": "オリジナルボスの画像 潰れた左向き",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_oriboss_tubure_right": {
     "description": "オリジナルボスの画像 潰れた右向き",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_pattern": {
     "description": "キャラクターパターンのファイル名",
@@ -7945,127 +8089,220 @@
   },
   "filename_se_block": {
     "description": "ブロックを破壊",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_bomb": {
     "description": "エアームズの爆弾",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_chizugamen": {
     "description": "地図画面からステージへ入る",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_clear": {
     "description": "ステージクリア",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_coin": {
     "description": "コインを取る、？ブロックからコインが出る",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_dengeki": {
     "description": "ピカチーの電撃",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_dokan": {
     "description": "土管に入る",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_dosun": {
     "description": "ドッスンスンが落ちる",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_fireball": {
     "description": "ファイヤーボール発射、スイッチ",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_fumu": {
     "description": "敵を踏む",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_gameover": {
     "description": "ゲームオーバー",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_get": {
     "description": "アイテムを取る、扉が開く",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_grounder": {
     "description": "噴火、サイコクラッシャーアタック",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_happa": {
     "description": "はっぱカッター、ソーラービーム",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_hinoko": {
     "description": "火の粉、破壊光線",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_item": {
     "description": "？ブロックからアイテムが出る",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_jet": {
     "description": "ジェット、昇龍拳",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_jump": {
     "description": "ジャンプ",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_kaiole": {
     "description": "水の波動、流星キック",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_kiki": {
     "description": "滑る",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_miss": {
     "description": "自分が死んだ",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_mizu": {
     "description": "水しぶき",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_mizudeppo": {
     "description": "水鉄砲",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_senkuuza": {
     "description": "グレネード、りゅうせいぐん、ロケット頭突き、スカイアッパー",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_sjump": {
     "description": "スーパージャンプ、ジャンプ台でジャンプ、横へ飛ばすバネ",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_start": {
     "description": "ゲームスタート",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_se_tobasu": {
     "description": "ファイヤーボール等で敵を倒す",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_second_haikei": {
     "description": "ステージ1セカンド画像のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_second_haikei2": {
     "description": "ステージ2セカンド画像のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_second_haikei3": {
     "description": "ステージ3セカンド画像のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_second_haikei4": {
     "description": "ステージ4セカンド画像のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false
+    }
   },
   "filename_title": {
     "description": "タイトル画面のファイル名",
@@ -8073,19 +8310,35 @@
   },
   "filename_ximage1": {
     "description": "Ｘ座標指定画像１のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_ximage2": {
     "description": "Ｘ座標指定画像２のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_ximage3": {
     "description": "Ｘ座標指定画像３のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "filename_ximage4": {
     "description": "Ｘ座標指定画像４のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "firebar1_type": {
     "description": "ファイヤーバー（左回り）のタイプ",
@@ -9148,7 +9401,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "firebar2_type": {
     "description": "ファイヤーバー（右回り）のタイプ",
@@ -10211,7 +10467,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "firebar_blue1": {
     "description": "ファイヤー系の外側,シーソーと動くT字型の支柱,ブランコの鎖の色（B）",
@@ -10258,42 +10517,66 @@
   "fs_item_name1": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前１",
     "type": "string",
-    "default": "バウンド"
+    "default": "バウンド",
+    "version": {
+        "2.8": false
+    }
   },
   "fs_item_name2": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前２",
     "type": "string",
-    "default": "ストレート"
+    "default": "ストレート",
+    "version": {
+        "2.8": false
+    }
   },
   "fs_item_name3": {
     "description": "ファイヤーボールセレクトの人の選択肢の名前３",
     "type": "string",
-    "default": "ダブル"
+    "default": "ダブル",
+    "version": {
+        "2.8": false
+    }
   },
   "fs_name": {
     "description": "ファイヤーボールセレクトの人の名前",
     "type": "string",
-    "default": "ファイヤーボールセレクトの人"
+    "default": "ファイヤーボールセレクトの人",
+    "version": {
+        "2.8": false
+    }
   },
   "fs_serifu1": {
     "description": "ファイヤーボールセレクトの人のセリフ２",
     "type": "string",
-    "default": "どのファイヤーボールにしますか？"
+    "default": "どのファイヤーボールにしますか？",
+    "version": {
+        "2.8": false
+    }
   },
   "fs_serifu2": {
     "description": "ファイヤーボールセレクトの人のセリフ３",
     "type": "string",
-    "default": "を装備しました。"
+    "default": "を装備しました。",
+    "version": {
+        "2.8": false
+    }
   },
   "fx_bgm_loop": {
     "description": "BGMをループ再生する",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "fx_bgm_switch": {
     "description": "BGMを利用する",
     "type": "boolean",
-    "default": "2"
+    "default": "2",
+    "version": {
+        "2.8": false
+    }
   },
   "game_speed": {
     "description": "ゲームの進行スピード（小さいほど早い）",
@@ -10351,7 +10634,10 @@
         "description": "マップの指定座標に設置 画像サイズは任意"
       }
     ],
-    "default": "2"
+    "default": "2",
+    "version": {
+        "2.8": false
+    }
   },
   "gazou_scroll_speed_x": {
     "description": "背景画像の強制スクロールX方向速度",
@@ -10361,6 +10647,9 @@
     "default": "8",
     "require": {
       "gazou_scroll": "4"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "gazou_scroll_speed_y": {
@@ -10371,6 +10660,9 @@
     "max": 32,
     "require": {
       "gazou_scroll": "4"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "gazou_scroll_x": {
@@ -10379,6 +10671,9 @@
     "default": "0",
     "require": {
       "gazou_scroll": "11"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "gazou_scroll_y": {
@@ -10387,6 +10682,9 @@
     "default": "0",
     "require": {
       "gazou_scroll": "11"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "grenade_blue1": {
@@ -10435,7 +10733,10 @@
     "description": "グレネード１発に必要な得点",
     "type": "integer",
     "min": 1,
-    "default": "20"
+    "default": "20",
+    "version": {
+        "2.8": false
+    }
   },
   "grenade_type": {
     "description": "グレネードの種類",
@@ -10478,7 +10779,10 @@
         "description": "ブロック1破壊砲(ボスには効かない)"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2","3","4","5","6"]
+    }
   },
   "hitokoto1-1": {
     "description": "一言メッセージ1のセリフ（1行目）",
@@ -10685,7 +10989,10 @@
         "description": "ヘルメット"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_add_tokugi2": {
     "description": "追加用の主人公の特技２",
@@ -10812,7 +11119,10 @@
         "description": "ヘルメット"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_add_tokugi3": {
     "description": "追加用の主人公の特技３",
@@ -10939,7 +11249,10 @@
         "description": "ヘルメット"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_add_tokugi4": {
     "description": "追加用の主人公の特技４",
@@ -11066,7 +11379,10 @@
         "description": "ヘルメット"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_enemy_press": {
     "description": "雑魚敵を踏める",
@@ -11085,18 +11401,28 @@
         "description": "当たり判定なし"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_equip_grenade": {
     "description": "グレネードの装備数",
     "type": "integer",
     "min": 0,
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "j_fire_equip": {
     "description": "ファイヤーボールを標準装備する",
     "type": "boolean-reversed",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_fire_mkf": {
     "description": "水中でもファイアボールが使える",
@@ -11124,22 +11450,36 @@
         "description": "ダブル"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "j_hp": {
     "description": "主人公のHP",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "j_hp_name": {
     "description": "主人公のHPの名前",
     "type": "string",
-    "default": "HP"
+    "default": "HP",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "j_tail_ap_boss": {
     "description": "しっぽの攻撃力（ボス用）",
     "type": "integer",
-    "default": "4"
+    "default": "4",
+    "version": {
+        "2.8": false
+    }
   },
   "j_tail_hf": {
     "description": "しっぽの標準装備をする",
@@ -11246,7 +11586,10 @@
         "description": "ひたすら右へ走る"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "jibun_left_shoki": {
     "description": "残り人数",
@@ -11277,12 +11620,18 @@
   "key1-on-count": {
     "description": "必要なKEY1の数（1-5）",
     "type": "integer",
-    "default": "3"
+    "default": "3",
+    "version": {
+        "2.8": false
+    }
   },
   "key2-on-count": {
     "description": "必要なKEY2の数（1-5）",
     "type": "integer",
-    "default": "3"
+    "default": "3",
+    "version": {
+        "2.8": false
+    }
   },
   "kuragesso_attack": {
     "description": "クラゲッソの攻撃パターン",
@@ -11309,12 +11658,18 @@
         "description": "右回り"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "layer_mode": {
     "description": "背景レイヤーを表示する",
     "type": "boolean-reversed",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "mariri_attack": {
     "description": "マリリの攻撃パターン",
@@ -11341,12 +11696,18 @@
         "description": "体当たり"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "mcs_haikei_visible": {
     "description": "レイヤーモードでなくても背景画像を表示する",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "mes1_name": {
     "description": "ヘルメットかドリルをくれる人,メッセージの人1の名前",
@@ -11404,7 +11765,10 @@
         "description": "ハリケンブラスト"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "moji_grenade": {
     "description": "GRENADE の文字",
@@ -11446,7 +11810,10 @@
   "now_loading": {
     "description": "起動中メッセージ",
     "type": "string",
-    "default": "ただいまファイルを読み込み中。しばらくお待ち下さい。"
+    "default": "ただいまファイルを読み込み中。しばらくお待ち下さい。",
+    "version": {
+        "2.8": false
+    }
   },
   "oriboss_anime_type": {
     "description": "オリジナルボスの戦闘中のアニメ",
@@ -11461,7 +11828,11 @@
         "description": "なし"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_destroy": {
     "description": "オリジナルボスを倒した場合",
@@ -11476,7 +11847,11 @@
         "description": "ステージクリアー"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_fumeru_f": {
     "description": "オリジナルボスが主人公と重なった場合の動作",
@@ -11499,35 +11874,59 @@
         "description": "主人公が即死する"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_height": {
     "description": "オリジナルボスの高さ",
     "type": "integer",
     "min": 32,
-    "default": "64"
+    "default": "64",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_hp": {
     "description": "オリジナルボスのHP",
     "type": "integer",
     "min": 1,
-    "default": "20"
+    "default": "20",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_name": {
     "description": "オリジナルボスの名前",
     "type": "integer",
-    "default": "ボスのHP"
+    "default": "ボスのHP",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_speed": {
     "description": "オリジナルボスの速度",
     "type": "integer",
     "min": 1,
-    "default": "4"
+    "default": "4",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_tail_f": {
     "description": "オリジナルボスに主人公のしっぽ攻撃を有効にする",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_ugoki": {
     "description": "オリジナルボスの動き方",
@@ -11642,7 +12041,11 @@
         "description": "巨大化  右から"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_v": {
     "description": "オリジナルボス",
@@ -11661,7 +12064,11 @@
         "description": "センクウザの文字Zの位置へ設置"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza1": {
     "description": "オリジナルボスの技1",
@@ -11852,13 +12259,21 @@
         "description": "水の波動 右へ発射"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza1_wait": {
     "description": "オリジナルボス1の技の使用後の待機時間",
     "type": "integer",
     "min": 1,
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza2": {
     "description": "オリジナルボスの技2",
@@ -12049,13 +12464,21 @@
         "description": "水の波動 右へ発射"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza2_wait": {
     "description": "オリジナルボス2の技の使用後の待機時間",
     "type": "integer",
     "min": 1,
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza3": {
     "description": "オリジナルボスの技3",
@@ -12246,13 +12669,21 @@
         "description": "水の波動 右へ発射"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza3_wait": {
     "description": "オリジナルボス3の技の使用後の待機時間",
     "type": "integer",
     "min": 1,
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza_select": {
     "description": "オリジナルボスの技の使い方",
@@ -12299,37 +12730,60 @@
         "description": "中央では技1 右では技2 左では技3"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_waza_select_option": {
     "description": "オリジナルボスの技の使い方で6か7を指定した場合の、技1の使用回数",
     "type": "integer",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_width": {
     "description": "オリジナルボスの幅",
     "type": "integer",
     "min": 32,
-    "default": "64"
+    "default": "64",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_x": {
     "description": "オリジナルボスの設置Ｘ座標",
     "type": "integer",
     "min": 0,
     "max": 179,
-    "default": "20"
+    "default": "20",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "oriboss_y": {
     "description": "オリジナルボスの設置Ｙ座標",
     "type": "integer",
     "min": 0,
     "max": 29,
-    "default": "24"
+    "default": "24",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "pause_switch": {
     "description": "ポーズ機能を使わない",
     "type": "boolean",
-    "default": "2"
+    "default": "2",
+    "version": {
+        "2.8": false
+    }
   },
   "poppie_attack": {
     "description": "ポッピー直進の攻撃パターン",
@@ -12356,7 +12810,10 @@
         "description": "ハリケンブラスト"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "score_1up_1": {
     "description": "1upする得点 1",
@@ -12419,7 +12876,10 @@
         "description": "左下４画面分"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "scroll_mode": {
     "description": "スクロールモード",
@@ -12500,12 +12960,18 @@
   "se_filename": {
     "description": "効果音のファイル名を指定する",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "se_switch": {
     "description": "効果音を利用する",
     "type": "boolean",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "second_gazou_priority": {
     "description": "セカンド画像の表示位置",
@@ -12520,7 +12986,10 @@
         "description": "主人公の手前"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "second_gazou_scroll": {
     "description": "セカンド画像のスクロール",
@@ -12559,7 +13028,10 @@
         "description": "マップの指定座標に設置 画像サイズは任意"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "second_gazou_scroll_speed_x": {
     "description": "セカンド背景強制スクロールX方向速度",
@@ -12569,6 +13041,9 @@
     "max": 32,
     "require": {
       "second_gazou_scroll": "4"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "second_gazou_scroll_speed_y": {
@@ -12579,6 +13054,9 @@
     "default": "-8",
     "require": {
       "second_gazou_scroll": "4"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "second_gazou_scroll_x": {
@@ -12587,6 +13065,9 @@
     "default": "0",
     "require": {
       "second_gazou_scroll": "8"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "second_gazou_scroll_y": {
@@ -12595,12 +13076,18 @@
     "default": "0",
     "require": {
       "second_gazou_scroll": "8"
+    },
+    "version": {
+        "2.8": false
     }
   },
   "second_gazou_visible": {
     "description": "セカンド画像を使用する",
     "type": "boolean-reversed",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu1-1": {
     "description": "ヘルメットかドリルをくれる人,メッセージの人1のセリフ1（1行目）",
@@ -12725,17 +13212,26 @@
   "serifu7-1": {
     "description": "ファイヤーボールセレクトの人のセリフ（1行目）",
     "type": "string",
-    "default": "好きなファイヤーボールを、３種類から"
+    "default": "好きなファイヤーボールを、３種類から",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu7-2": {
     "description": "ファイヤーボールセレクトの人のセリフ（2行目）",
     "type": "string",
-    "default": "選んで下さい。私はサービスが良いので、"
+    "default": "選んで下さい。私はサービスが良いので、",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu7-3": {
     "description": "ファイヤーボールセレクトの人のセリフ（3行目）",
     "type": "string",
-    "default": "何度でも選べますよ。"
+    "default": "何度でも選べますよ。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu8-1": {
     "description": "ショップ店員のセリフ(地図)（1行目）",
@@ -12770,147 +13266,234 @@
   "serifu_grenade_shop-1": {
     "description": "得点でグレネードを売る人のセリフ（1行目）",
     "type": "string",
-    "default": "グレネード１発を、"
+    "default": "グレネード１発を、",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_grenade_shop-2": {
     "description": "得点でグレネードを売る人のセリフ（2行目）",
     "type": "string",
-    "default": "２０点で売りますよ。"
+    "default": "２０点で売りますよ。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_grenade_shop-3": {
     "description": "得点でグレネードを売る人のセリフ（3行目）",
     "type": "string",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_grenade_shop-4": {
     "description": "得点でグレネードを売る人のセリフ2",
     "type": "string",
-    "default": "何発にしますか？"
+    "default": "何発にしますか？",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_grenade_shop-5": {
     "description": "得点でグレネードを売る人のセリフ3",
     "type": "string",
-    "default": "得点が、足りません。"
+    "default": "得点が、足りません。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_grenade_shop-6": {
     "description": "得点でグレネードを売る人のセリフ4",
     "type": "string",
-    "default": "グレネードを手に入れた。"
+    "default": "グレネードを手に入れた。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_grenade_shop_name": {
     "description": "得点でグレネードを売る人の名前",
     "type": "string",
-    "default": "クリス"
+    "default": "クリス",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-1": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（1行目）",
     "type": "string",
-    "default": "ここから先へ進むには、"
+    "default": "ここから先へ進むには、",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-10": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ8",
     "type": "string",
-    "default": "お気を付けて。"
+    "default": "お気を付けて。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-2": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（2行目）",
     "type": "string",
-    "default": "３つのＫＥＹ１が必要です。"
+    "default": "３つのＫＥＹ１が必要です。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-3": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（3行目）",
     "type": "string",
-    "default": "この世界のどこかに、あるはず。"
+    "default": "この世界のどこかに、あるはず。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-4": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ2",
     "type": "string",
-    "default": "ＫＥＹ１を３つ、わたしますか？"
+    "default": "ＫＥＹ１を３つ、わたしますか？",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-5": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ3",
     "type": "string",
-    "default": "はい"
+    "default": "はい",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-6": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ4",
     "type": "string",
-    "default": "いいえ"
+    "default": "いいえ",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-7": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ5",
     "type": "string",
-    "default": "ＫＥＹ１を３つ、持っていません。"
+    "default": "ＫＥＹ１を３つ、持っていません。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-8": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ6",
     "type": "string",
-    "default": "先へ進む道が、開けました。"
+    "default": "先へ進む道が、開けました。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-9": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ7",
     "type": "string",
-    "default": "勇者殿、"
+    "default": "勇者殿、",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key1-on-name": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人の名前",
     "type": "string",
-    "default": "お姫様"
+    "default": "お姫様",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-1": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（1行目）",
     "type": "string",
-    "default": "３つのＫＥＹ２がないと、"
+    "default": "３つのＫＥＹ２がないと、",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-10": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ8",
     "type": "string",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-2": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（2行目）",
     "type": "string",
-    "default": "ここから先へは進めないぜ。"
+    "default": "ここから先へは進めないぜ。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-3": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（3行目）",
     "type": "string",
-    "default": "どこかで見つけてくれ。"
+    "default": "どこかで見つけてくれ。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-4": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ2",
     "type": "string",
-    "default": "ＫＥＹ２を３つ、わたしますか？"
+    "default": "ＫＥＹ２を３つ、わたしますか？",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-5": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ3",
     "type": "string",
-    "default": "はい"
+    "default": "はい",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-6": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ4",
     "type": "string",
-    "default": "いいえ"
+    "default": "いいえ",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-7": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ5",
     "type": "string",
-    "default": "ＫＥＹ２を３つ、持っていません。"
+    "default": "ＫＥＹ２を３つ、持っていません。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-8": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ6",
     "type": "string",
-    "default": "３つのＫＥＹ２、受け取ったぜ。"
+    "default": "３つのＫＥＹ２、受け取ったぜ。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-9": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ7",
     "type": "string",
-    "default": "これで、先へ進めるようになったな。"
+    "default": "これで、先へ進めるようになったな。",
+    "version": {
+        "2.8": false
+    }
   },
   "serifu_key2-on-name": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人の名前",
     "type": "string",
-    "default": "ザトシ"
+    "default": "ザトシ",
+    "version": {
+        "2.8": false
+    }
   },
   "setumei_menu1": {
     "description": "説明する人メニュー前置き",
@@ -13117,7 +13700,10 @@
         "description": "右回り"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "time_max": {
     "description": "制限時間（0で無制限）",
@@ -14186,7 +14772,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2","3","4","5","6","7"]
+    }
   },
   "ugokuyuka2_type": {
     "description": "動く床(左右移動)のタイプ",
@@ -15249,7 +15838,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2","3","4","5","6","7"]
+    }
   },
   "ugokuyuka3_type": {
     "description": "動く床(左右移動x2)のタイプ",
@@ -16312,7 +16904,10 @@
         "description": "下キーで降りられる下り坂"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2","3","4","5","6","7"]
+    }
   },
   "url1": {
     "description": "リンク土管1の移動先",
@@ -16347,19 +16942,28 @@
         "description": "左進行用の視界"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "water_clear_level": {
     "description": "水の透明度",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "default": "128"
+    "default": "128",
+    "version": {
+        "2.8": false
+    }
   },
   "water_clear_switch": {
     "description": "水の半透明表示をする",
     "type": "boolean-reversed",
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": false
+    }
   },
   "water_visible": {
     "description": "水の表示",
@@ -16374,103 +16978,186 @@
         "description": "常に表示する"
       }
     ],
-    "default": "2"
+    "default": "2",
+    "version": {
+        "2.8": false
+    }
   },
   "x_backimage1_filename": {
     "description": "X座標指定背景画像1のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage1_view_x": {
     "description": "X座標指定背景画像1 表示開始X座標(0-164)",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage2_filename": {
     "description": "X座標指定背景画像2のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage2_view_x": {
     "description": "X座標指定背景画像2 表示開始X座標(0-164)",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage3_filename": {
     "description": "X座標指定背景画像3のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage3_view_x": {
     "description": "X座標指定背景画像3 表示開始X座標(0-164)",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage4_filename": {
     "description": "X座標指定背景画像4のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_backimage4_view_x": {
     "description": "X座標指定背景画像4 表示開始X座標(0-164)",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image1_view_x": {
     "description": "Ｘ座標指定画像１ 表示開始Ｘ座標(0-164)",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image1_x": {
     "description": "Ｘ座標指定画像１ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image1_y": {
     "description": "Ｘ座標指定画像１ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image2_view_x": {
     "description": "Ｘ座標指定画像２　表示開始Ｘ座標  (0-164) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image2_x": {
     "description": "Ｘ座標指定画像２ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image2_y": {
     "description": "Ｘ座標指定画像２ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image3_view_x": {
     "description": "Ｘ座標指定画像３　表示開始Ｘ座標  (0-164) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image3_x": {
     "description": "Ｘ座標指定画像３ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image3_y": {
     "description": "Ｘ座標指定画像３ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image4_view_x": {
     "description": "Ｘ座標指定画像４　表示開始Ｘ座標  (0-164) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image4_x": {
     "description": "Ｘ座標指定画像４ 表示位置Ｘ座標  (0-511) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "x_image4_y": {
     "description": "Ｘ座標指定画像４ 表示位置Ｙ座標  (0-319) ",
     "type": "integer",
-    "default": "0"
+    "default": "0",
+    "version": {
+        "2.8": false,
+        "fx": false
+    }
   },
   "yachamo_kf": {
     "description": "ヤチャモの攻撃パターン",
@@ -16513,6 +17200,9 @@
         "description": "破壊光線 右へ発射"
       }
     ],
-    "default": "1"
+    "default": "1",
+    "version": {
+        "2.8": ["1","2"]
+    }
   }
 }
