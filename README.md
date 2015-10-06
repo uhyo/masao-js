@@ -37,5 +37,15 @@ Throws when it reads invalidly formatted object.
 ## masao.format.make(options)
 Makes masao-json-format object.
 
+## masao.playlog.parse(buf)
+Parses Buffer as a masao-playlog-format object and returns an object in the following form:
+
+    {
+      score: 100, //eventual score
+      stage: 1   //the last stage that is passed
+    }
+
+Throws if the data is invalod.
+
 # License
 MIT
