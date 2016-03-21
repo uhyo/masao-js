@@ -1,4 +1,4 @@
-# masao v0.0.5
+# masao v0.0.8
 
 ```sh
 npm install masao
@@ -6,7 +6,7 @@ npm install masao
 
 `masao` is a utility package for handling the Canvas Masao params.
 
-`masao.format` api can handle masao-json-format up to version: *draft-2*.
+`masao.format` api can handle masao-json-format up to version: *draft-3*.
 
 # API
 ## masao.param.getDefaultValue(key)
@@ -30,7 +30,7 @@ Returns a new object with omitted default params attached.
 Returns a new object where extraneous fields are cut off.
 
 ## masao.format.load(obj)
-Load masao-json-format object and returns new object that is upgraded to *draft-2*.
+Load masao-json-format object and returns new object that is upgraded to *draft-3*.
 
 Throws when it reads invalidly formatted object.
 
@@ -45,7 +45,7 @@ Parses Buffer as a masao-playlog-format object and returns an object in the foll
       stage: 1   //the last stage that is passed
     }
 
-Throws if the data is invalod.
+Throws if the data is invalid.
 
 # License
 MIT
