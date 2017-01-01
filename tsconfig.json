@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "lib": ["es5", "es2015.core", "dom"],
+        "alwaysStrict": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "target": "es5",
+        "rootDir": "lib/",
+        "outDir": "dist/",
+        "declaration": true,
+        "noEmitOnError": true
+    },
+    "include": [
+        "lib/*.d.ts",
+        "lib/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

@@ -11704,7 +11704,7 @@
   "mcs_haikei_visible": {
     "description": "レイヤーモードでなくても背景画像を表示する",
     "type": "boolean",
-    "default": "1",
+    "default": "2",
     "version": {
         "2.8": false
     }
