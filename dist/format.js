@@ -1,16 +1,25 @@
 "use strict";
 var extend = require("extend");
+var jsonschema_1 = require("jsonschema");
+var advanced_map_1 = require("./format/advanced-map");
 //format
+var schema = require('./format-schema.json');
 //load masao-json-format object and update to latest.
 function load(obj) {
+    var validator = new jsonschema_1.Validator();
+    var vresult = validator.validate(obj, schema);
+    if (!vresult.valid) {
+        //JSON Schemaにあてはまらなくてだめ
+        throw vresult.errors[0];
+    }
     var version = formatVersionToNumber(obj["masao-json-format-version"]);
     if (version === -1) {
         //unsupported version
         throw new Error("Unsupported masao-json-format version.");
     }
     var result = extend({}, obj);
-    //support draft-3
-    result["masao-json-format-version"] = "draft-3";
+    //support draft-4
+    result["masao-json-format-version"] = "draft-4";
     //version
     if (version < 2) {
         //versionが未サポートなのでデフォルト値を
@@ -20,29 +29,22 @@ function load(obj) {
         //バージョンが書いてあるけどだめ
         throw new Error("Unsupported masao version: \"" + obj["version"] + "\"");
     }
-    //metadata
-    if (obj["metadata"] != null) {
-        //metadataのチェック
-        if ("object" !== typeof obj["metadata"]) {
-            throw new Error("Invalid value: metadata");
-        }
-        var subs = ["title", "author", "editor"];
-        for (var i = 0; i < 3; i++) {
-            var k = subs[i];
-            if (obj.metadata[k] != null && "string" !== typeof obj.metadata[k]) {
-                throw new Error("Invalid value: metadata." + k);
-            }
-        }
-    }
     //script
     if (version < 3) {
-        result["script"] = null;
+        result['script'] = null;
     }
-    else if (obj["script"] == null) {
-        result["script"] = null;
+    else if (obj['script'] == null) {
+        result['script'] = null;
     }
-    else if ("string" !== typeof obj["script"]) {
-        throw new Error("Invalid script value");
+    // advanced-map
+    if (version < 4) {
+        result['advanced-map'] = null;
+    }
+    else if (result['advanced-map'] == null) {
+        result['advanced-map'] = null;
+    }
+    else {
+        advanced_map_1.checkAdvancedMap(result['advanced-map']);
     }
     return result;
 }
@@ -96,6 +98,9 @@ function formatVersionToNumber(version) {
     }
     else if (version === "draft-3") {
         return 3;
+    }
+    else if (version === "draft-4") {
+        return 4;
     }
     return -1;
 }

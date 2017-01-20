@@ -1,50 +1,93 @@
 import * as extend from 'extend';
+import {
+    Validator,
+} from 'jsonschema';
+
+import {
+    checkAdvancedMap,
+} from './format/advanced-map';
+
 //format
+const schema = require('./format-schema.json');
 
 //load masao-json-format object and update to latest.
-export function load(obj: any): any{
+export function load(obj: any): MasaoJSONFormat{
+    const validator = new Validator();
+    const vresult = validator.validate(obj, schema);
+
+    if (!vresult.valid){
+        //JSON Schemaにあてはまらなくてだめ
+        throw vresult.errors[0];
+    }
+
     const version=formatVersionToNumber(obj["masao-json-format-version"]);
     if(version===-1){
         //unsupported version
         throw new Error("Unsupported masao-json-format version.");
     }
     const result = extend({}, obj);
-    //support draft-3
-    result["masao-json-format-version"]="draft-3";
+    //support draft-4
+    result["masao-json-format-version"]="draft-4";
     //version
     if(version < 2){
         //versionが未サポートなのでデフォルト値を
         result["version"] = "fx16";
     }else if(!isValidVersion(obj["version"])){
         //バージョンが書いてあるけどだめ
-        throw new Error("Unsupported masao version: \""+obj["version"]+"\"");
+        throw new Error(`Unsupported masao version: "${obj["version"]}"`);
     }
-    //metadata
-    if(obj["metadata"] != null){
-        //metadataのチェック
-        if("object"!==typeof obj["metadata"]){
-            throw new Error("Invalid value: metadata");
-        }
-        const subs = ["title","author","editor"];
-        for(let i=0; i<3; i++){
-            const k = subs[i];
-            if(obj.metadata[k]!=null && "string"!==typeof obj.metadata[k]){
-                throw new Error(`Invalid value: metadata.${k}`);
-            }
-        }
-    }
+
     //script
     if(version < 3){
-        result["script"] = null;
-    }else if(obj["script"] == null){
-        result["script"] = null;
-    }else if("string" !== typeof obj["script"]){
-        throw new Error("Invalid script value");
+        result['script'] = null;
+    }else if(obj['script'] == null){
+        result['script'] = null;
+    }
+
+    // advanced-map
+    if (version < 4){
+        result['advanced-map'] = null;
+    }else if(result['advanced-map'] == null){
+        result['advanced-map'] = null;
+    }else{
+        checkAdvancedMap(result['advanced-map']);
     }
     return result;
 }
 
 //make masao-json-format object
+export interface MasaoJSONFormat{
+    'masao-json-format-version': 'draft-1' | 'draft-2' | 'draft-3' | 'draft-4';
+    params: Record<string, string>;
+    version: string;
+    metadata?: {
+        title?: string;
+        author?: string;
+        editor?: string;
+    };
+    script?: string;
+    'advanced-map'?: {
+        stages: Array<{
+        }>;
+        customParts: Record<string, {
+            extends: string;
+            properties: Record<string, any>;
+        }>;
+    };
+}
+export interface StageObject{
+    size: {
+        x: number;
+        y: number;
+    };
+    layers: Array<LayerObject>
+}
+export interface LayerObject{
+    id?: string;
+    type: 'main' | 'mapchip';
+    src?: string;
+    map: Array<Array<number | string>>;
+}
 /*
  * options: {
  *   params: object,
@@ -55,6 +98,9 @@ export function load(obj: any): any{
  *     editor?: string
  *   },
  *   script: string
+ *   "advanced-map": {
+ *     
+ *   }
  * }   
  */
 export interface MakeOptions{
@@ -67,7 +113,7 @@ export interface MakeOptions{
     };
     script?: string;
 }
-export function make(options: MakeOptions){
+export function make(options: MakeOptions): MasaoJSONFormat{
     //validate
     const result: any = {
         "masao-json-format-version": "draft-3",
@@ -115,6 +161,8 @@ function formatVersionToNumber(version: string): number{
         return 2;
     }else if(version==="draft-3"){
         return 3;
+    }else if(version==="draft-4"){
+        return 4;
     }
     return -1;
 }
