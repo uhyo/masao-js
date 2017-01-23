@@ -67,8 +67,7 @@ export interface MasaoJSONFormat{
     };
     script?: string;
     'advanced-map'?: {
-        stages: Array<{
-        }>;
+        stages: Array<StageObject>;
         customParts: Record<string, {
             extends: string;
             properties: Record<string, any>;
@@ -104,14 +103,11 @@ export interface LayerObject{
  * }   
  */
 export interface MakeOptions{
-    params: any;
-    version: string;
-    metadata?: {
-        title?: string;
-        author?: string;
-        editor?: string;
-    };
-    script?: string;
+    params: MasaoJSONFormat['params'];
+    version: MasaoJSONFormat['version'];
+    metadata?: MasaoJSONFormat['metadata'];
+    script?: MasaoJSONFormat['script'];
+    'advanced-map'?: MasaoJSONFormat['advanced-map'];
 }
 export function make(options: MakeOptions): MasaoJSONFormat{
     //validate
@@ -145,6 +141,11 @@ export function make(options: MakeOptions): MasaoJSONFormat{
         throw new Error("Invalid script");
     }
     result.script=options.script;
+
+    if(options['advanced-map'] != null){
+        checkAdvancedMap(options['advanced-map']);
+        result['advanced-map'] = options['advanced-map'];
+    }
     return result;
 }
 

@@ -81,6 +81,10 @@ function make(options) {
         throw new Error("Invalid script");
     }
     result.script = options.script;
+    if (options['advanced-map'] != null) {
+        advanced_map_1.checkAdvancedMap(options['advanced-map']);
+        result['advanced-map'] = options['advanced-map'];
+    }
     return result;
 }
 exports.make = make;

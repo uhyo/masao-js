@@ -10,7 +10,7 @@ export interface MasaoJSONFormat {
     };
     script?: string;
     'advanced-map'?: {
-        stages: Array<{}>;
+        stages: Array<StageObject>;
         customParts: Record<string, {
             extends: string;
             properties: Record<string, any>;
@@ -31,13 +31,10 @@ export interface LayerObject {
     map: Array<Array<number | string>>;
 }
 export interface MakeOptions {
-    params: any;
-    version: string;
-    metadata?: {
-        title?: string;
-        author?: string;
-        editor?: string;
-    };
-    script?: string;
+    params: MasaoJSONFormat['params'];
+    version: MasaoJSONFormat['version'];
+    metadata?: MasaoJSONFormat['metadata'];
+    script?: MasaoJSONFormat['script'];
+    'advanced-map'?: MasaoJSONFormat['advanced-map'];
 }
 export declare function make(options: MakeOptions): MasaoJSONFormat;
