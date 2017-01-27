@@ -279,6 +279,18 @@ export function sanitize(params: Params, version?: string): Params{
     return result;
 }
 
+export function cutUnadvancedData(params: Params): Params{
+    const result = {};
+    for (const key in params){
+        const pd = data[key];
+        if (pd != null && (pd.type==='map' || pd.type==='layer')){
+            continue;
+        }
+        result[key] = params[key];
+    }
+    return result;
+}
+
 function versionCategory(version: string): string{
     //version string -> version category
     if(version==="2.7" || version==="2.8" || version==="2.81"){

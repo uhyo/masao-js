@@ -68,7 +68,7 @@ export interface MasaoJSONFormat{
     script?: string;
     'advanced-map'?: {
         stages: Array<StageObject>;
-        customParts: Record<string, {
+        customParts?: Record<string, {
             extends: string;
             properties: Record<string, any>;
         }>;
@@ -112,7 +112,7 @@ export interface MakeOptions{
 export function make(options: MakeOptions): MasaoJSONFormat{
     //validate
     const result: any = {
-        "masao-json-format-version": "draft-3",
+        "masao-json-format-version": "draft-4",
     };
     if(options.params==null || "object"!==typeof options.params){
         throw new Error("Invalid value of params");

@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "lib": ["es5", "es2015.core", "dom"],
+        "lib": ["es5", "es2015", "dom"],
         "alwaysStrict": true,
         "module": "commonjs",
         "moduleResolution": "node",
