@@ -162,7 +162,6 @@ setTimeout(function(){
         const handler = (ev: MessageEvent)=>{
             if (ev.data != null){
                 // ゲームを受け取った
-                console.log('YEAH', ev.data);
                 if (timeout != null){
                     clearTimeout(timeout);
                 }
