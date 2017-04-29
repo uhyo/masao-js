@@ -227,7 +227,7 @@ export function validateParams(params: Params,opt: Partial<ValidateParamsOption>
 }
 
 export function cutDefaults(params: Params): Params{
-    const result={};
+    const result: Params = {};
     for(let key in params){
         if(key in data){
             if(params[key] !== data[key].default){
@@ -239,18 +239,19 @@ export function cutDefaults(params: Params): Params{
 }
 
 export function addDefaults(params: Params, version?: string): Params{
+    let v: '2.8' | 'fx' | 'kani2';
     if(version == null){
-        version = 'kani2';
+        v = 'kani2';
     }else{
-        version = versionCategory(version);
+        v = versionCategory(version);
     }
-    const result={};
+    const result: Params = {};
     for(let key in params){
         result[key] = params[key];
     }
     for(let key in data){
         const dk=data[key];
-        if(dk.version && dk.version[version]===false){
+        if(dk.version && dk.version[v]===false){
             continue;
         }
         if(!(key in result)){
@@ -261,15 +262,16 @@ export function addDefaults(params: Params, version?: string): Params{
 }
 
 export function sanitize(params: Params, version?: string): Params{
+    let v: '2.8' | 'fx' | 'kani2';
     if(version == null){
-        version = 'kani2';
+        v = 'kani2';
     }else{
-        version = versionCategory(version);
+        v = versionCategory(version);
     }
-    const result={};
+    const result: Params = {};
     for(let key in data){
         const dk=data[key];
-        if(dk.version && dk.version[version]===false){
+        if(dk.version && dk.version[v]===false){
             continue;
         }
         if(key in params){
@@ -280,7 +282,7 @@ export function sanitize(params: Params, version?: string): Params{
 }
 
 export function cutUnadvancedData(params: Params): Params{
-    const result = {};
+    const result: Params = {};
     for (const key in params){
         const pd = data[key];
         if (pd != null && (pd.type==='map' || pd.type==='layer')){
@@ -291,7 +293,7 @@ export function cutUnadvancedData(params: Params): Params{
     return result;
 }
 
-function versionCategory(version: string): string{
+function versionCategory(version: string): '2.8' | 'fx' | 'kani2'{
     //version string -> version category
     if(version==="2.7" || version==="2.8" || version==="2.81"){
         return "2.8";

@@ -10827,7 +10827,7 @@
   "hitokoto3-1": {
     "description": "一言メッセージ3のセリフ（1行目）",
     "type": "string",
-    "default": "俺は、世界一になる男だ。"
+    "default": "オレは、世界一になる男だ。"
   },
   "hitokoto3-2": {
     "description": "一言メッセージ3のセリフ（2行目）",
@@ -11427,7 +11427,7 @@
   "j_fire_mkf": {
     "description": "水中でもファイアボールが使える",
     "type": "boolean-reversed",
-    "default": "2"
+    "default": "1"
   },
   "j_fire_type": {
     "description": "ファイヤーボールの種類",
@@ -11503,7 +11503,7 @@
         "description": "敵を倒せてブロック1を壊せる"
       }
     ],
-    "default": "3"
+    "default": "1"
   },
   "j_tokugi": {
     "description": "主人公の特技",
@@ -13709,7 +13709,7 @@
     "description": "制限時間（0で無制限）",
     "type": "integer",
     "min": 0,
-    "default": "0"
+    "default": "300"
   },
   "ugokuyuka1_type": {
     "description": "動く床(上下移動)のタイプ",

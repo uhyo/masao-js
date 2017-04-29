@@ -14,6 +14,9 @@ export function html(source: string): Promise<MasaoJSONFormat | null>{
 
         const htmldoc = parser.parseFromString(source, 'text/html');
 
+        const titleelm = htmldoc.querySelector('title');
+        const title = (titleelm && titleelm.textContent) || null;
+
         // 正男を探す(まずはapplet/object)
         const applets = Array.from<HTMLElement>(htmldoc.querySelectorAll('applet, object') as any);
 
@@ -34,6 +37,9 @@ export function html(source: string): Promise<MasaoJSONFormat | null>{
                 resolve(make({
                     params,
                     version,
+                    metadata: title ? {
+                        title,
+                    } : void 0,
                 }));
                 return;
             }else if (a.tagName === 'OBJECT'){
@@ -69,6 +75,9 @@ export function html(source: string): Promise<MasaoJSONFormat | null>{
                     resolve(make({
                         params: sanitize(params, version),
                         version,
+                        metadata: title ? {
+                            title,
+                        } : void 0,
                     }));
                     return;
                 }
@@ -81,6 +90,9 @@ export function html(source: string): Promise<MasaoJSONFormat | null>{
 }
 
 function runCanvas(htmldoc: HTMLDocument): Promise<MasaoJSONFormat | null>{
+    const titleelm = htmldoc.querySelector('title');
+    const title = (titleelm && titleelm.textContent) || null;
+
     // canvas正男を動作させる
     // Web Workerを作る
     let worker = `
@@ -158,7 +170,6 @@ setTimeout(function(){
     return new Promise<MasaoJSONFormat | null>(resolve=>{
 
         // random
-        const id = Math.random().toString(36).slice(2);
         const handler = (ev: MessageEvent)=>{
             if (ev.data != null){
                 // ゲームを受け取った
@@ -173,6 +184,9 @@ setTimeout(function(){
                     params: ev.data.params,
                     version: 'fx16',
                     'advanced-map': ev.data['advanced-map'],
+                    metadata: title ? {
+                        title,
+                    } : void 0,
                 }));
             }
         };

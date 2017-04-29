@@ -1,23 +1,50 @@
-import * as extend from 'extend';
 import {
     Validator,
 } from 'jsonschema';
 
 import {
+    MasaoJSONFormat,
+    MasaoJSONFormatVersion,
+    AdvancedMap,
+    StageObject,
+    LayerObject,
+    formatVersionToNumber,
+} from './format/data';
+
+import {
     checkAdvancedMap,
+    sanitizeAdvancedMap,
 } from './format/advanced-map';
+
+export {
+    MasaoJSONFormat,
+    MasaoJSONFormatVersion,
+    AdvancedMap,
+    StageObject,
+    LayerObject,
+    sanitizeAdvancedMap,
+};
 
 //format
 const schema = require('./format-schema.json');
 
+export interface LoadOptions{
+    throwError?: boolean;
+    nestedErrors?: boolean;
+    logErrors?: boolean;
+}
 //load masao-json-format object and update to latest.
-export function load(obj: any): MasaoJSONFormat{
+export function load(obj: any, options?: LoadOptions): MasaoJSONFormat{
     const validator = new Validator();
-    const vresult = validator.validate(obj, schema);
+    const vresult = validator.validate(obj, schema, options);
 
     if (!vresult.valid){
         //JSON Schemaにあてはまらなくてだめ
-        throw vresult.errors[0];
+        if (options && options.logErrors){
+            // for debug purpose
+            console.error(vresult.errors);
+        }
+        throw vresult.errors[vresult.errors.length-1];
     }
 
     const version=formatVersionToNumber(obj["masao-json-format-version"]);
@@ -25,7 +52,9 @@ export function load(obj: any): MasaoJSONFormat{
         //unsupported version
         throw new Error("Unsupported masao-json-format version.");
     }
-    const result = extend({}, obj);
+    const result = {
+        ... obj,
+    };
     //support draft-4
     result["masao-json-format-version"]="draft-4";
     //version
@@ -56,37 +85,6 @@ export function load(obj: any): MasaoJSONFormat{
 }
 
 //make masao-json-format object
-export interface MasaoJSONFormat{
-    'masao-json-format-version': 'draft-1' | 'draft-2' | 'draft-3' | 'draft-4';
-    params: Record<string, string>;
-    version: string;
-    metadata?: {
-        title?: string;
-        author?: string;
-        editor?: string;
-    };
-    script?: string;
-    'advanced-map'?: {
-        stages: Array<StageObject>;
-        customParts?: Record<string, {
-            extends: string;
-            properties: Record<string, any>;
-        }>;
-    };
-}
-export interface StageObject{
-    size: {
-        x: number;
-        y: number;
-    };
-    layers: Array<LayerObject>
-}
-export interface LayerObject{
-    id?: string;
-    type: 'main' | 'mapchip';
-    src?: string;
-    map: Array<Array<number | string>>;
-}
 /*
  * options: {
  *   params: object,
@@ -107,7 +105,7 @@ export interface MakeOptions{
     version: MasaoJSONFormat['version'];
     metadata?: MasaoJSONFormat['metadata'];
     script?: MasaoJSONFormat['script'];
-    'advanced-map'?: MasaoJSONFormat['advanced-map'];
+    'advanced-map'?: AdvancedMap;
 }
 export function make(options: MakeOptions): MasaoJSONFormat{
     //validate
@@ -142,9 +140,10 @@ export function make(options: MakeOptions): MasaoJSONFormat{
     }
     result.script=options.script;
 
-    if(options['advanced-map'] != null){
-        checkAdvancedMap(options['advanced-map']);
-        result['advanced-map'] = options['advanced-map'];
+    const adv = options['advanced-map'];
+    if(adv != null){
+        checkAdvancedMap(adv);
+        result['advanced-map'] = adv;
     }
     return result;
 }
@@ -154,17 +153,4 @@ function isValidVersion(version: string): boolean{
     return ["2.7","2.8","2.9","3.0","3.11","3.12","fx","fx2","fx3","fx4","fx5","fx6","fx7","fx8","fx9","fx10","fx11","fx12","fx13","fx14","fx15","fx16","kani","kani2"].indexOf(version)>=0;
 }
 
-//formatのversionを数字に
-function formatVersionToNumber(version: string): number{
-    if(version==="draft-1"){
-        return 1;
-    }else if(version==="draft-2"){
-        return 2;
-    }else if(version==="draft-3"){
-        return 3;
-    }else if(version==="draft-4"){
-        return 4;
-    }
-    return -1;
-}
 
