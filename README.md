@@ -1,4 +1,4 @@
-# masao v0.1.0
+# masao v0.1.2
 
 ```sh
 npm install masao
@@ -23,8 +23,12 @@ Validates a param object `params`. Returns boolean value.
 ## masao.param.cutDefault(params)
 Returns a new object where any field is the same, except the case that its value is the default value.
 
-## masao.param.addDefaults(params[, version])
+## masao.param.addDefaults(params[, options])
 Returns a new object with omitted default params attached.
+
+* options.version (string; valid version string) Version of masao.
+* options.nomaps (boolean) Do not add map and layer params.
+* options.noresources (boolean) Do not add resource params.
 
 ## masao.param.sanitize(params[, version])
 Returns a new object where extraneous fields are cut off.

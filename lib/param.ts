@@ -238,12 +238,38 @@ export function cutDefaults(params: Params): Params{
     return result;
 }
 
-export function addDefaults(params: Params, version?: string): Params{
+export interface addDefaultsOption{
+    /**
+     * バージョンを指定
+     */
+    version?: string;
+    /**
+     * マップは入れない
+     */
+    nomaps?: boolean;
+    /**
+     * リソースは入れない
+     */
+    noresources?: boolean;
+}
+
+export function addDefaults(params: Params, version?: addDefaultsOption | string): Params{
     let v: '2.8' | 'fx' | 'kani2';
-    if(version == null){
+    let opt: addDefaultsOption;
+    if ('string' === typeof version){
+        // 後方互換性
+        opt = {
+            version,
+        };
+    }else if (version != null){
+        opt = version;
+    }else{
+        opt = {};
+    }
+    if(opt.version == null){
         v = 'kani2';
     }else{
-        v = versionCategory(version);
+        v = versionCategory(opt.version);
     }
     const result: Params = {};
     for(let key in params){
@@ -252,6 +278,12 @@ export function addDefaults(params: Params, version?: string): Params{
     for(let key in data){
         const dk=data[key];
         if(dk.version && dk.version[v]===false){
+            continue;
+        }
+        if (opt.nomaps===true && (dk.type === 'map' || dk.type === 'layer')){
+            continue;
+        }
+        if (opt.noresources===true && dk.type === 'resource'){
             continue;
         }
         if(!(key in result)){

@@ -12968,7 +12968,7 @@
   "se_switch": {
     "description": "効果音を利用する",
     "type": "boolean",
-    "default": "1",
+    "default": "2",
     "version": {
         "2.8": false
     }
