@@ -19,7 +19,7 @@
           "type": "string",
         },
         "editor": {
-          "typee": "string",
+          "type": "string",
         },
       },
     },
@@ -46,98 +46,105 @@
     },
     "advanced-map": {
       "id": "#advanced-map",
-      "type": "object",
-      "required": [
-        "stages",
-      ],
-      "properties": {
-        "stages": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": [
-              "size",
-              "layers",
-            ],
-            "properties": {
-              "size": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "stages",
+          ],
+          "properties": {
+            "stages": {
+              "type": "array",
+              "items": {
                 "type": "object",
                 "required": [
-                  "x",
-                  "y",
+                  "size",
+                  "layers",
                 ],
                 "properties": {
-                  "x": {
-                    "type": "number",
-                    "multipleOf": 1,
-                    "minimum": 16,
-                    "exclusiveMinimum": false,
-                  },
-                  "y": {
-                    "type": "number",
-                    "multipleOf": 1,
-                    "minimum": 10,
-                    "exclusiveMinimum": false,
-                  },
-                },
-              },
-              "layers": {
-                "type": "array",
-                "item": {
-                  "type": "object",
-                  "required": [
-                    "type",
-                    "map",
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                    },
-                    "type": {
-                      // XXX: exactly one item of `layers` have to "main" type
-                      "type": "string",
-                      "enum": [
-                        "main",
-                        "mapchip",
-                      ],
-                    },
-                    "src": {
-                      "type": "string",
-                    },
-                    "map": {
-                      "type": "array",
-                      "items": {
-                        "type": "array",
-                        "items": {
-                          "type": ["number", "string"],
-                        },
+                  "size": {
+                    "type": "object",
+                    "required": [
+                      "x",
+                      "y",
+                    ],
+                    "properties": {
+                      "x": {
+                        "type": "number",
+                        "multipleOf": 1,
+                        "minimum": 16,
+                        "exclusiveMinimum": false,
+                      },
+                      "y": {
+                        "type": "number",
+                        "multipleOf": 1,
+                        "minimum": 10,
+                        "exclusiveMinimum": false,
                       },
                     },
                   },
-                }
+                  "layers": {
+                    "type": "array",
+                    "item": {
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "map",
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                        },
+                        "type": {
+                          // XXX: exactly one item of `layers` have to "main" type
+                          "type": "string",
+                          "enum": [
+                            "main",
+                            "mapchip",
+                          ],
+                        },
+                        "src": {
+                          "type": "string",
+                        },
+                        "map": {
+                          "type": "array",
+                          "items": {
+                            "type": "array",
+                            "items": {
+                              "type": ["number", "string"],
+                            },
+                          },
+                        },
+                      },
+                    }
+                  },
+                },
               },
             },
-          },
-        },
-        "customParts": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object",
-            "required": [
-              "extends",
-              "properties",
-            ],
-            "properties": {
-              "extends": {
-                "type": ["number", "string"],
-              },
-              "properties": {
+            "customParts": {
+              "type": "object",
+              "additionalProperties": {
                 "type": "object",
+                "required": [
+                  "extends",
+                  "properties",
+                ],
+                "properties": {
+                  "extends": {
+                    "type": ["number", "string"],
+                  },
+                  "properties": {
+                    "type": "object",
+                  },
+                },
               },
             },
           },
         },
-      },
+      ],
     },
 
     // schema for whole format
