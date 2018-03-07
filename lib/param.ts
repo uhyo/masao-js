@@ -1,6 +1,4 @@
 //Canvas Masao Params
-import * as extend from 'extend';
-
 export type Params = Record<string, string>;
 
 // paramを示すデータ
@@ -171,12 +169,13 @@ export interface ValidateParamsOption{
     allowNulls: boolean;
 }
 export function validateParams(params: Params,opt: Partial<ValidateParamsOption>): boolean{
-    const options: ValidateParamsOption = extend({
+    const options: ValidateParamsOption = {
         version: 'kari2',
         maxLength: Infinity,
         allowExtraneous: true,
         allowNulls: true,
-    }, opt || {});
+        ... (opt || {}),
+    };
 
     const vc=versionCategory(options.version);
 

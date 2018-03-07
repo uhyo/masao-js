@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/uhyo/masao-js",
   "dependencies": {
-    "extend": "^3.0.0",
     "jsonschema": "^1.1.1"
   },
   "devDependencies": {
