@@ -1,0 +1,1073 @@
+{
+  "names": [
+    "coin1_type",
+    "coin3_type",
+    "dokan1_type",
+    "dokan2_type",
+    "dokan3_type",
+    "dokan4_type",
+    "dossunsun_type",
+    "firebar1_type",
+    "firebar2_type",
+    "ugokuyuka1_type",
+    "ugokuyuka2_type",
+    "ugokuyuka3_type"
+  ],
+  "values": [
+    {
+      "value": "2",
+      "description": "乗ると落ちる床"
+    },
+    {
+      "value": "3",
+      "description": "ずっと乗っていると落ちる床"
+    },
+    {
+      "value": "4",
+      "description": "動く床　左回り"
+    },
+    {
+      "value": "5",
+      "description": "動く床　右回り"
+    },
+    {
+      "value": "6",
+      "description": "乗れるカイオール"
+    },
+    {
+      "value": "7",
+      "description": "ジャンプ台"
+    },
+    {
+      "value": "8",
+      "description": "上ドッスンスン"
+    },
+    {
+      "value": "9",
+      "description": "左ドッスンスン"
+    },
+    {
+      "value": "10",
+      "description": "右ドッスンスン"
+    },
+    {
+      "value": "11",
+      "description": "跳ねるドッスンスン"
+    },
+    {
+      "value": "12",
+      "description": "上がらないドッスンスン"
+    },
+    {
+      "value": "13",
+      "description": "エレベータードッスンスン 上"
+    },
+    {
+      "value": "14",
+      "description": "エレベータードッスンスン 下"
+    },
+    {
+      "value": "15",
+      "description": "上下ドッスンスン"
+    },
+    {
+      "value": "16",
+      "description": "左右ドッスンスン"
+    },
+    {
+      "value": "17",
+      "description": "ロングレンジドッスンスン"
+    },
+    {
+      "value": "18",
+      "description": "ファイヤーバー２本"
+    },
+    {
+      "value": "19",
+      "description": "ファイヤーバー3本 左回り"
+    },
+    {
+      "value": "20",
+      "description": "ファイヤーバー3本 右回り"
+    },
+    {
+      "value": "21",
+      "description": "隠しブロック"
+    },
+    {
+      "value": "22",
+      "description": "右にブロック１が出る"
+    },
+    {
+      "value": "23",
+      "description": "左にブロック１が出る"
+    },
+    {
+      "value": "24",
+      "description": "上にハシゴが出る"
+    },
+    {
+      "value": "25",
+      "description": "シーソー"
+    },
+    {
+      "value": "26",
+      "description": "シーソー　左が下"
+    },
+    {
+      "value": "27",
+      "description": "シーソー　右が下"
+    },
+    {
+      "value": "28",
+      "description": "ブランコ"
+    },
+    {
+      "value": "29",
+      "description": "ブランコ　２個連続"
+    },
+    {
+      "value": "30",
+      "description": "スウィングバー　左"
+    },
+    {
+      "value": "31",
+      "description": "スウィングバー　右"
+    },
+    {
+      "value": "32",
+      "description": "スウィングファイヤーバー 左"
+    },
+    {
+      "value": "33",
+      "description": "スウィングファイヤーバー 右"
+    },
+    {
+      "value": "34",
+      "description": "上にブロック1が出る"
+    },
+    {
+      "value": "35",
+      "description": "上にブロック1が2つ出る"
+    },
+    {
+      "value": "36",
+      "description": "右にブロック1が2つ出る"
+    },
+    {
+      "value": "37",
+      "description": "左にブロック１が２つ出る"
+    },
+    {
+      "value": "38",
+      "description": "ジャンプ台が出る"
+    },
+    {
+      "value": "39",
+      "description": "トゲが出る"
+    },
+    {
+      "value": "40",
+      "description": "周囲のトゲをコインに変換"
+    },
+    {
+      "value": "41",
+      "description": "周囲のトゲをブロック1に変換"
+    },
+    {
+      "value": "42",
+      "description": "周囲のブロック1をコインに変換"
+    },
+    {
+      "value": "43",
+      "description": "周囲のブロック4を消去"
+    },
+    {
+      "value": "44",
+      "description": "お店"
+    },
+    {
+      "value": "45",
+      "description": "ヘルメットかドリルをくれる人"
+    },
+    {
+      "value": "46",
+      "description": "グレネードかジェットをくれる人"
+    },
+    {
+      "value": "47",
+      "description": "ファイヤーウォール 上へ伸びる"
+    },
+    {
+      "value": "48",
+      "description": "ファイヤーウォール 下へ伸びる"
+    },
+    {
+      "value": "49",
+      "description": "ファイヤーウォール 左へ伸びる"
+    },
+    {
+      "value": "50",
+      "description": "ファイヤーウォール 右へ伸びる"
+    },
+    {
+      "value": "51",
+      "description": "ファイヤーウォール 壁まで上下"
+    },
+    {
+      "value": "52",
+      "description": "ファイヤーウォール 壁まで左右"
+    },
+    {
+      "value": "53",
+      "description": "壁まで上下移動するドッスンスン"
+    },
+    {
+      "value": "54",
+      "description": "壁まで左右移動するドッスンスン"
+    },
+    {
+      "value": "55",
+      "description": "乗ると左右移動するドッスンスン"
+    },
+    {
+      "value": "56",
+      "description": "火山"
+    },
+    {
+      "value": "57",
+      "description": "逆火山"
+    },
+    {
+      "value": "58",
+      "description": "動くＴ字型"
+    },
+    {
+      "value": "59",
+      "description": "動くＴ字型 ２個連続"
+    },
+    {
+      "value": "60",
+      "description": "ロープ"
+    },
+    {
+      "value": "61",
+      "description": "ロープ  ２本連続"
+    },
+    {
+      "value": "62",
+      "description": "乗れるカイオール 方向キーで移動"
+    },
+    {
+      "value": "63",
+      "description": "ファイヤーウォール 上へ速射"
+    },
+    {
+      "value": "64",
+      "description": "ファイヤーウォール 下へ速射"
+    },
+    {
+      "value": "65",
+      "description": "ファイヤーウォール 左へ速射"
+    },
+    {
+      "value": "66",
+      "description": "ファイヤーウォール 右へ速射"
+    },
+    {
+      "value": "67",
+      "description": "得点で開く扉"
+    },
+    {
+      "value": "68",
+      "description": "コインを全部取ると開く扉"
+    },
+    {
+      "value": "69",
+      "description": "周囲10パーツ以内のコインを全部取ると開く扉"
+    },
+    {
+      "value": "70",
+      "description": "左15パーツ以内の雑魚敵を全部倒すと開く扉"
+    },
+    {
+      "value": "71",
+      "description": "人間大砲　右向き"
+    },
+    {
+      "value": "72",
+      "description": "人間大砲　左向き"
+    },
+    {
+      "value": "73",
+      "description": "人間大砲　天井"
+    },
+    {
+      "value": "74",
+      "description": "人間大砲　右の壁"
+    },
+    {
+      "value": "75",
+      "description": "人間大砲　左の壁"
+    },
+    {
+      "value": "76",
+      "description": "高性能ジャンプ台"
+    },
+    {
+      "value": "77",
+      "description": "左へ飛ばすバネ"
+    },
+    {
+      "value": "78",
+      "description": "右へ飛ばすバネ"
+    },
+    {
+      "value": "79",
+      "description": "スポット処理　小"
+    },
+    {
+      "value": "80",
+      "description": "スポット処理　中"
+    },
+    {
+      "value": "81",
+      "description": "スポット処理　大"
+    },
+    {
+      "value": "82",
+      "description": "スポット処理　終了"
+    },
+    {
+      "value": "83",
+      "description": "スポット処理 範囲拡大アイテム"
+    },
+    {
+      "value": "84",
+      "description": "人食いワカメ 上へ拡大縮小"
+    },
+    {
+      "value": "85",
+      "description": "人食いワカメ 下へ拡大縮小"
+    },
+    {
+      "value": "86",
+      "description": "人食いワカメ 中央から拡大縮小"
+    },
+    {
+      "value": "87",
+      "description": "ファイヤーボール 水平に飛ぶ"
+    },
+    {
+      "value": "88",
+      "description": "ファイヤーボール 跳ねる"
+    },
+    {
+      "value": "89",
+      "description": "ファイヤーボール ダブル"
+    },
+    {
+      "value": "90",
+      "description": "ファイヤーボールセレクトの人"
+    },
+    {
+      "value": "91",
+      "description": "ブロック1破壊砲発射 右"
+    },
+    {
+      "value": "92",
+      "description": "ブロック1破壊砲発射 左"
+    },
+    {
+      "value": "93",
+      "description": "ブロック1破壊砲発射 上"
+    },
+    {
+      "value": "94",
+      "description": "ブロック1破壊砲発射 下"
+    },
+    {
+      "value": "95",
+      "description": "グレネード５発"
+    },
+    {
+      "value": "96",
+      "description": "回転するドッスンスン 左回り"
+    },
+    {
+      "value": "97",
+      "description": "回転するドッスンスン 右回り"
+    },
+    {
+      "value": "98",
+      "description": "回転する巨大ドッスンスン 左回り"
+    },
+    {
+      "value": "99",
+      "description": "回転する巨大ドッスンスン 右回り"
+    },
+    {
+      "value": "100",
+      "description": "画面内で右強制スクロール"
+    },
+    {
+      "value": "101",
+      "description": "画面内で左強制スクロール"
+    },
+    {
+      "value": "102",
+      "description": "画面内で上強制スクロール"
+    },
+    {
+      "value": "103",
+      "description": "画面内で下強制スクロール"
+    },
+    {
+      "value": "104",
+      "description": "画面内で右上強制スクロール"
+    },
+    {
+      "value": "105",
+      "description": "画面内で右下強制スクロール"
+    },
+    {
+      "value": "106",
+      "description": "画面内で左上強制スクロール"
+    },
+    {
+      "value": "107",
+      "description": "画面内で左下強制スクロール"
+    },
+    {
+      "value": "108",
+      "description": "スクロールスピードアップ"
+    },
+    {
+      "value": "109",
+      "description": "スクロールスピードダウン"
+    },
+    {
+      "value": "110",
+      "description": "画面内で全方向スクロール"
+    },
+    {
+      "value": "111",
+      "description": "画面内でスクロール停止"
+    },
+    {
+      "value": "112",
+      "description": "自分が重なると右強制スクロール"
+    },
+    {
+      "value": "113",
+      "description": "自分が重なると上強制スクロール"
+    },
+    {
+      "value": "114",
+      "description": "自分が重なると全方向スクロール"
+    },
+    {
+      "value": "115",
+      "description": "画面内で横固定縦自由スクロール"
+    },
+    {
+      "value": "116",
+      "description": "画面内で右強制縦自由スクロール"
+    },
+    {
+      "value": "117",
+      "description": "画面内で左進行用の視界"
+    },
+    {
+      "value": "118",
+      "description": "画面内で右進行用の視界"
+    },
+    {
+      "value": "119",
+      "description": "曲線による上り坂"
+    },
+    {
+      "value": "120",
+      "description": "曲線による下り坂"
+    },
+    {
+      "value": "121",
+      "description": "曲線による上り坂  線のみ"
+    },
+    {
+      "value": "122",
+      "description": "曲線による下り坂  線のみ"
+    },
+    {
+      "value": "123",
+      "description": "乗れる円"
+    },
+    {
+      "value": "124",
+      "description": "乗れる円  大"
+    },
+    {
+      "value": "125",
+      "description": "乗れる半円"
+    },
+    {
+      "value": "126",
+      "description": "乗れる半円  線のみ"
+    },
+    {
+      "value": "127",
+      "description": "人口太陽  左回り"
+    },
+    {
+      "value": "128",
+      "description": "人口太陽  右回り"
+    },
+    {
+      "value": "129",
+      "description": "人口太陽 棒5本 左回り"
+    },
+    {
+      "value": "130",
+      "description": "人口太陽 棒5本 右回り"
+    },
+    {
+      "value": "131",
+      "description": "ファイヤーリング 左回り"
+    },
+    {
+      "value": "132",
+      "description": "ファイヤーリング 右回り"
+    },
+    {
+      "value": "133",
+      "description": "上下移動する半円 下から"
+    },
+    {
+      "value": "134",
+      "description": "上下移動する半円 上から"
+    },
+    {
+      "value": "135",
+      "description": "乗ると上がる半円"
+    },
+    {
+      "value": "136",
+      "description": "乗ると下がる半円"
+    },
+    {
+      "value": "137",
+      "description": "柱付きの半円"
+    },
+    {
+      "value": "138",
+      "description": "乗ると下がる円"
+    },
+    {
+      "value": "139",
+      "description": "乗ると下がる円 降りると上がる"
+    },
+    {
+      "value": "140",
+      "description": "上下移動する円 上から"
+    },
+    {
+      "value": "141",
+      "description": "上下移動する円 下から"
+    },
+    {
+      "value": "142",
+      "description": "ファイヤーリング2本 左回り"
+    },
+    {
+      "value": "143",
+      "description": "ファイヤーリング2本 右回り"
+    },
+    {
+      "value": "144",
+      "description": "ファイヤーリング2本 高速左回り"
+    },
+    {
+      "value": "145",
+      "description": "ファイヤーリング2本 高速右回り"
+    },
+    {
+      "value": "146",
+      "description": "落ちるだけのドッスンスン"
+    },
+    {
+      "value": "147",
+      "description": "動かないドッスンスン"
+    },
+    {
+      "value": "148",
+      "description": "左右へ押せるドッスンスン"
+    },
+    {
+      "value": "149",
+      "description": "上へ押せるドッスンスン"
+    },
+    {
+      "value": "150",
+      "description": "その場で跳ねるドッスンスン"
+    },
+    {
+      "value": "151",
+      "description": "長いロープ"
+    },
+    {
+      "value": "152",
+      "description": "長いロープ  右から"
+    },
+    {
+      "value": "153",
+      "description": "長いロープ つかまると動く"
+    },
+    {
+      "value": "154",
+      "description": "長いロープ つかまると左から動く"
+    },
+    {
+      "value": "155",
+      "description": "左向きのトゲ４つ"
+    },
+    {
+      "value": "156",
+      "description": "右向きのトゲ４つ"
+    },
+    {
+      "value": "157",
+      "description":
+        "左右へ押せるドッスンスンのゴール(ここへ全部持って行くとクリア)"
+    },
+    {
+      "value": "158",
+      "description": "左右へ押せるドッスンスンのゴール(ロック機能付き)"
+    },
+    {
+      "value": "159",
+      "description": "右へ一方通行"
+    },
+    {
+      "value": "160",
+      "description": "左へ一方通行"
+    },
+    {
+      "value": "161",
+      "description": "上へ一方通行"
+    },
+    {
+      "value": "162",
+      "description": "下へ一方通行"
+    },
+    {
+      "value": "163",
+      "description": "右へ一方通行 表示なし"
+    },
+    {
+      "value": "164",
+      "description": "左へ一方通行 表示なし"
+    },
+    {
+      "value": "165",
+      "description": "上へ一方通行 表示なし"
+    },
+    {
+      "value": "166",
+      "description": "下へ一方通行 表示なし"
+    },
+    {
+      "value": "167",
+      "description": "ゆれる棒"
+    },
+    {
+      "value": "168",
+      "description": "ゆれる棒  左から"
+    },
+    {
+      "value": "169",
+      "description": "ゆれる棒  広角"
+    },
+    {
+      "value": "170",
+      "description": "ゆれる棒 広角 左から"
+    },
+    {
+      "value": "171",
+      "description": "跳ねる円"
+    },
+    {
+      "value": "172",
+      "description": "跳ねる円  大"
+    },
+    {
+      "value": "173",
+      "description": "下向きワープ土管1"
+    },
+    {
+      "value": "174",
+      "description": "下向きワープ土管2"
+    },
+    {
+      "value": "175",
+      "description": "下向きワープ土管3"
+    },
+    {
+      "value": "176",
+      "description": "下向きワープ土管4"
+    },
+    {
+      "value": "177",
+      "description": "下向き土管1 上向き1につながる"
+    },
+    {
+      "value": "178",
+      "description": "下向き土管2 上向き2につながる"
+    },
+    {
+      "value": "179",
+      "description": "下向き土管3 上向き3につながる"
+    },
+    {
+      "value": "180",
+      "description": "下向き土管4 上向き4につながる"
+    },
+    {
+      "value": "181",
+      "description": "コンティニュー 残り人数のみ"
+    },
+    {
+      "value": "182",
+      "description": "?ブロック コンティニュー"
+    },
+    {
+      "value": "183",
+      "description": "左向き土管1 左右1につながる"
+    },
+    {
+      "value": "184",
+      "description": "左向き土管2 左右2につながる"
+    },
+    {
+      "value": "185",
+      "description": "左向き土管3 左右3につながる"
+    },
+    {
+      "value": "186",
+      "description": "左向き土管4 左右4につながる"
+    },
+    {
+      "value": "187",
+      "description": "右向き土管1 左右1につながる"
+    },
+    {
+      "value": "188",
+      "description": "右向き土管2 左右2につながる"
+    },
+    {
+      "value": "189",
+      "description": "右向き土管3 左右3につながる"
+    },
+    {
+      "value": "190",
+      "description": "右向き土管4 左右4につながる"
+    },
+    {
+      "value": "191",
+      "description": "スイッチ 重なるとON/OFF(周囲10ブロック以内に影響)"
+    },
+    {
+      "value": "192",
+      "description": "スイッチ ↑キーでON/OFF(周囲10ブロック以内に影響)"
+    },
+    {
+      "value": "193",
+      "description": "スイッチ式の扉 ONで開く"
+    },
+    {
+      "value": "194",
+      "description": "スイッチ式の扉 ONで閉まる"
+    },
+    {
+      "value": "195",
+      "description": "スイッチ式トゲ ONでブロック4"
+    },
+    {
+      "value": "196",
+      "description": "スイッチ式トゲ OFFでブロック4"
+    },
+    {
+      "value": "197",
+      "description": "スイッチ式トゲ ONで消える"
+    },
+    {
+      "value": "198",
+      "description": "スイッチ式トゲ ONで出現"
+    },
+    {
+      "value": "199",
+      "description": "スイッチ式ハシゴ ONで消える"
+    },
+    {
+      "value": "200",
+      "description": "スイッチ式ハシゴ ONで出現"
+    },
+    {
+      "value": "201",
+      "description": "スイッチ式電撃バリア縦 ONで消える"
+    },
+    {
+      "value": "202",
+      "description": "スイッチ式電撃バリア縦 ONで出現"
+    },
+    {
+      "value": "203",
+      "description": "スイッチ式電撃バリア横 ONで消える"
+    },
+    {
+      "value": "204",
+      "description": "スイッチ式電撃バリア横 ONで出現"
+    },
+    {
+      "value": "205",
+      "description": "スイッチ式動く床 ONで上"
+    },
+    {
+      "value": "206",
+      "description": "スイッチ式動く床 ONで下"
+    },
+    {
+      "value": "207",
+      "description": "スイッチ式動く床 ONで右"
+    },
+    {
+      "value": "208",
+      "description": "スイッチ式動く床 ONで左"
+    },
+    {
+      "value": "209",
+      "description": "スイッチ式長く動く床 ONで上"
+    },
+    {
+      "value": "210",
+      "description": "スイッチ式長く動く床 ONで右"
+    },
+    {
+      "value": "211",
+      "description": "スイッチ 重なるとON/OFF(周囲5ブロック以内に影響)"
+    },
+    {
+      "value": "212",
+      "description": "スイッチ ↑キーでON/OFF(周囲5ブロック以内に影響)"
+    },
+    {
+      "value": "213",
+      "description": "?ブロック ONの動作(周囲10ブロック以内に影響)"
+    },
+    {
+      "value": "214",
+      "description": "?ブロック OFFの動作(周囲10ブロック以内に影響)"
+    },
+    {
+      "value": "215",
+      "description": "?ブロック ONの動作(周囲5ブロック以内に影響)"
+    },
+    {
+      "value": "216",
+      "description": "?ブロック OFFの動作(周囲5ブロック以内に影響)"
+    },
+    {
+      "value": "217",
+      "description":
+        "連動スイッチ 重なるとON/OFF(マップ全体に影響 同スイッチへ連動)"
+    },
+    {
+      "value": "218",
+      "description":
+        "連動スイッチ ↑キーでON/OFF(マップ全体に影響 同スイッチへ連動)"
+    },
+    {
+      "value": "219",
+      "description": "スイッチ式ファイヤーバー 上から左"
+    },
+    {
+      "value": "220",
+      "description": "スイッチ式ファイヤーバー 上から右"
+    },
+    {
+      "value": "221",
+      "description": "スイッチ式ファイヤーバー 左から上"
+    },
+    {
+      "value": "222",
+      "description": "スイッチ式ファイヤーバー 右から上"
+    },
+    {
+      "value": "223",
+      "description": "スイッチ式ファイヤーバー 左から下"
+    },
+    {
+      "value": "224",
+      "description": "スイッチ式ファイヤーバー 右から下"
+    },
+    {
+      "value": "225",
+      "description": "スイッチ式ファイヤーバー 下から左"
+    },
+    {
+      "value": "226",
+      "description": "スイッチ式ファイヤーバー 下から右"
+    },
+    {
+      "value": "227",
+      "description": "スイッチ式ファイヤーバー 右から左回り"
+    },
+    {
+      "value": "228",
+      "description": "スイッチ式ファイヤーバー 左から右回り"
+    },
+    {
+      "value": "229",
+      "description": "スイッチ式ファイヤーバー 右から右回り"
+    },
+    {
+      "value": "230",
+      "description": "スイッチ式ファイヤーバー 左から左回り"
+    },
+    {
+      "value": "231",
+      "description": "スイッチ式ファイヤーバー 上から左回り"
+    },
+    {
+      "value": "232",
+      "description": "スイッチ式ファイヤーバー 上から右回り"
+    },
+    {
+      "value": "233",
+      "description": "スイッチ式ファイヤーバー 下から右回り"
+    },
+    {
+      "value": "234",
+      "description": "スイッチ式ファイヤーバー 下から左回り"
+    },
+    {
+      "value": "235",
+      "description": "スイッチ式ブロック横4つ ONで消える"
+    },
+    {
+      "value": "236",
+      "description": "スイッチ式ブロック横4つ ONで出現"
+    },
+    {
+      "value": "237",
+      "description": "スイッチ式動くT字型 ONで左"
+    },
+    {
+      "value": "238",
+      "description": "スイッチ式動くT字型 ONで右"
+    },
+    {
+      "value": "239",
+      "description": "スイッチ式速く動くT字型 ONで左"
+    },
+    {
+      "value": "240",
+      "description": "スイッチ式速く動くT字型 ONで右"
+    },
+    {
+      "value": "241",
+      "description": "スイッチ式動くT字型 ONで左から上"
+    },
+    {
+      "value": "242",
+      "description": "スイッチ式動くT字型 ONで上から左"
+    },
+    {
+      "value": "243",
+      "description": "スイッチ式動くT字型 ONで右から上"
+    },
+    {
+      "value": "244",
+      "description": "スイッチ式動くT字型 ONで上から右"
+    },
+    {
+      "value": "245",
+      "description": "ＫＥＹ１"
+    },
+    {
+      "value": "246",
+      "description": "ＫＥＹ２"
+    },
+    {
+      "value": "247",
+      "description": "ＫＥＹ１で開く扉"
+    },
+    {
+      "value": "248",
+      "description": "ＫＥＹ２で開く扉"
+    },
+    {
+      "value": "249",
+      "description": "ＫＥＹ１  落ちる"
+    },
+    {
+      "value": "250",
+      "description": "ＫＥＹ２  落ちる"
+    },
+    {
+      "value": "251",
+      "description": "ＫＥＹ１が３つで開く扉"
+    },
+    {
+      "value": "252",
+      "description": "ＫＥＹ２が３つで開く扉"
+    },
+    {
+      "value": "253",
+      "description": "乗ると壊れるブロック"
+    },
+    {
+      "value": "254",
+      "description": "KEY1が3つでONの動作の人"
+    },
+    {
+      "value": "255",
+      "description": "KEY2が3つでONの動作の人"
+    },
+    {
+      "value": "256",
+      "description": "スイッチ式ブロック縦4つ ONで消える"
+    },
+    {
+      "value": "257",
+      "description": "スイッチ式ブロック縦4つ ONで出現"
+    },
+    {
+      "value": "258",
+      "description": "ファイヤボール等で破壊 ONの動作"
+    },
+    {
+      "value": "259",
+      "description": "ファイヤボール等で破壊 ONの動作(周囲5ブロック以内に影響)"
+    },
+    {
+      "value": "260",
+      "description": "しっぽで破壊 ONの動作"
+    },
+    {
+      "value": "261",
+      "description": "しっぽで破壊 ONの動作(周囲5ブロック以内に影響)"
+    },
+    {
+      "value": "262",
+      "description": "得点でグレネードを売る人"
+    },
+    {
+      "value": "263",
+      "description": "下キーで降りられる上り坂"
+    },
+    {
+      "value": "264",
+      "description": "下キーで降りられる下り坂"
+    }
+  ]
+}

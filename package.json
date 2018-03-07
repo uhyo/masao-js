@@ -7,8 +7,9 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:tsc": "tsc",
-    "build:json": "cpx data/*.json dist/ -u",
+    "build:json": "cpx \"data/*.json\" dist/ -u",
     "build:json5": "./build/json5.js data/ dist/",
+    "clean": "rimraf dist/",
     "watch": "npm-run-all --parallel watch:*",
     "watch:tsc": "tsc --watch",
     "watch:json": "cpx data/*.json dist/ -uw",
@@ -38,6 +39,7 @@
     "glob": "^7.1.1",
     "json5": "^0.5.1",
     "npm-run-all": "^4.0.1",
+    "rimraf": "^2.6.2",
     "typescript": "^2.1.4",
     "watch": "^1.0.1"
   }

@@ -44,6 +44,15 @@ export type Data = EnumData | BoolData | IntegerData | StringData | ResourceData
 
 export const data: Record<string, Data> = require('../data/params.json');
 
+const athletics: {
+    names: Array<string>;
+    values: Array<{value: string; description: string;}>;
+} = require('../data/athletics.json');
+// athletics関係
+for (const n of athletics.names) {
+    (data[n] as EnumData).enumValues.push(... athletics.values);
+}
+
 //マップ系を追加
 let map_df="";
 for(let i=0; i<60; i++){
