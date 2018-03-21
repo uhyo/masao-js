@@ -98,6 +98,9 @@ function runCanvas(htmldoc: HTMLDocument): Promise<MasaoJSONFormat | null>{
     let worker = `
 CanvasMasao = {
     Game: function Game(params, id, options){
+        if (options == null) {
+            options = {};
+        }
         result = {
             params: params,
             'advanced-map': options['advance-map'] || options['advanced-map'],

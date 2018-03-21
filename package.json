@@ -12,7 +12,7 @@
     "clean": "rimraf dist/",
     "watch": "npm-run-all --parallel watch:*",
     "watch:tsc": "tsc --watch",
-    "watch:json": "cpx data/*.json dist/ -uw",
+    "watch:json": "cpx \"data/*.json\" dist/ -uw",
     "watch:json5": "./build/json5.js data/ dist/ --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,9 @@
     "type": "git",
     "url": "https://github.com/uhyo/masao-js"
   },
-  "keywords": ["masao"],
+  "keywords": [
+    "masao"
+  ],
   "author": "uhyo",
   "license": "MIT",
   "bugs": {
