@@ -89,14 +89,14 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "default": "255"
+    "default": "48"
   },
   "backcolor_blue_s": {
     "description": "背景色(ステージ2)（B）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "default": "255"
+    "default": "0"
   },
   "backcolor_blue_t": {
     "description": "背景色(ステージ3)（B）",
@@ -117,14 +117,14 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "default": "255"
+    "default": "48"
   },
   "backcolor_green_s": {
     "description": "背景色(ステージ2)（G）",
     "type": "integer",
     "min": 0,
     "max": 255,
-    "default": "255"
+    "default": "0"
   },
   "backcolor_green_t": {
     "description": "背景色(ステージ3)（G）",
@@ -145,7 +145,7 @@
     "type": "integer",
     "min": 0,
     "max": 255,
-    "default": "0"
+    "default": "192"
   },
   "backcolor_red_s": {
     "description": "背景色(ステージ2)（R）",
@@ -274,7 +274,7 @@
   "boss_name": {
     "description": "ボス1のHPゲージに表示する名前",
     "type": "string",
-    "default": "グラーダ",
+    "default": "BOSS",
     "version": {
       "2.8": false
     }
@@ -282,7 +282,7 @@
   "boss2_name": {
     "description": "ボス2のHPゲージに表示する名前",
     "type": "string",
-    "default": "カイオール",
+    "default": "BOSS",
     "version": {
       "2.8": false
     }
@@ -290,7 +290,7 @@
   "boss3_name": {
     "description": "ボス3のHPゲージに表示する名前",
     "type": "string",
-    "default": "センクウザ",
+    "default": "BOSS",
     "version": {
       "2.8": false
     }
@@ -528,13 +528,13 @@
         "description": "ワープ土管"
       }
     ],
-    "default": "2"
+    "default": "1"
   },
   "door_score": {
     "description": "地図や仕掛けの「得点で開く扉」の基準得点",
     "type": "integer",
     "min": 10,
-    "default": "30"
+    "default": "800"
   },
   "dossunsun_type": {
     "description": "ドッスンスンのタイプ",
@@ -1241,7 +1241,7 @@
     "type": "integer",
     "min": -32,
     "max": 32,
-    "default": "8",
+    "default": "0",
     "require": {
       "gazou_scroll": "4"
     },
@@ -1252,7 +1252,7 @@
   "gazou_scroll_speed_y": {
     "description": "背景画像の強制スクロールY方向速度",
     "type": "integer",
-    "default": "-8",
+    "default": "0",
     "min": -32,
     "max": 32,
     "require": {
@@ -1387,7 +1387,7 @@
   "hitokoto1-1": {
     "description": "一言メッセージ1のセリフ（1行目）",
     "type": "string",
-    "default": "今日は、いい天気だなあ、なんてね。"
+    "default": "今日は、いい天気だね。"
   },
   "hitokoto1-2": {
     "description": "一言メッセージ1のセリフ（2行目）",
@@ -2217,7 +2217,7 @@
     "max": 255,
     "default": "0"
   },
-  "key1-on-count": {
+  "key1_on_count": {
     "description": "必要なKEY1の数（1-5）",
     "type": "integer",
     "default": "3",
@@ -2225,7 +2225,7 @@
       "2.8": false
     }
   },
-  "key2-on-count": {
+  "key2_on_count": {
     "description": "必要なKEY2の数（1-5）",
     "type": "integer",
     "default": "3",
@@ -2312,12 +2312,12 @@
   "mes1_name": {
     "description": "ヘルメットかドリルをくれる人,メッセージの人1の名前",
     "type": "string",
-    "default": "お姫様"
+    "default": "ダケシ"
   },
   "mes2_name": {
     "description": "グレネードかジェットをくれる人,メッセージの人2の名前",
     "type": "string",
-    "default": "ザトシ"
+    "default": "エリコ"
   },
   "mizunohadou_blue": {
     "description": "水の波動,人間大砲(本体)の色（B）",
@@ -3381,7 +3381,7 @@
   "pause_switch": {
     "description": "ポーズ機能を使わない",
     "type": "boolean",
-    "default": "2",
+    "default": "1",
     "version": {
       "2.8": false
     }
@@ -3419,12 +3419,12 @@
   "score_1up_1": {
     "description": "1upする得点 1",
     "type": "integer",
-    "default": "0"
+    "default": "500"
   },
   "score_1up_2": {
     "description": "1upする得点 2",
     "type": "integer",
-    "default": "0"
+    "default": "1000"
   },
   "score_v": {
     "description": "得点を表示する",
@@ -3637,7 +3637,7 @@
   "second_gazou_scroll_speed_x": {
     "description": "セカンド背景強制スクロールX方向速度",
     "type": "integer",
-    "default": "8",
+    "default": "0",
     "min": -32,
     "max": 32,
     "require": {
@@ -3652,7 +3652,7 @@
     "type": "integer",
     "min": -32,
     "max": 32,
-    "default": "-8",
+    "default": "0",
     "require": {
       "second_gazou_scroll": "4"
     },
@@ -3694,13 +3694,13 @@
     "description":
       "ヘルメットかドリルをくれる人,メッセージの人1のセリフ1（1行目）",
     "type": "string",
-    "default": "勇者のヘルメットか、工事現場のドリル。"
+    "default": "人の命は、お金では買えないと言われています。"
   },
   "serifu1-2": {
     "description":
       "ヘルメットかドリルをくれる人,メッセージの人1のセリフ1（2行目）",
     "type": "string",
-    "default": "どちらか１つを、あなたにプレゼントします。"
+    "default": "しかし、お店へ行けば、ＳＣＯＲＥで買えます。"
   },
   "serifu1-3": {
     "description":
@@ -3757,55 +3757,55 @@
     "description":
       "ヘルメットかドリルをくれる人,メッセージの人1のセリフ2（1行目）",
     "type": "string",
-    "default": "あなたへのプレゼントは、１つだけです。"
+    "default": "時は金なりと、言われています。しかし、"
   },
   "serifu2-2": {
     "description":
       "ヘルメットかドリルをくれる人,メッセージの人1のセリフ2（2行目）",
     "type": "string",
-    "default": "欲張らないでくださいね。"
+    "default": "お店なら、時間も買えます。"
   },
   "serifu2-3": {
     "description":
       "ヘルメットかドリルをくれる人,メッセージの人1のセリフ2（3行目）",
     "type": "string",
-    "default": "0"
+    "default": "店員さんて、グレートですね。"
   },
   "serifu3-1": {
     "description":
       "グレネードかジェットをくれる人,メッセージの人2のセリフ1（1行目）",
     "type": "string",
-    "default": "アメリカ陸軍のグレネード３発と、 "
+    "default": "おはようございます。星と数字が付いた扉が、"
   },
   "serifu3-2": {
     "description":
       "グレネードかジェットをくれる人,メッセージの人2のセリフ1（2行目）",
     "type": "string",
-    "default": "鉄腕アトムのジェット。どちらが欲しい？"
+    "default": "ありますよね。あれは、ですねえ、その数だけ"
   },
   "serifu3-3": {
     "description":
       "グレネードかジェットをくれる人,メッセージの人2のセリフ1（3行目）",
     "type": "string",
-    "default": "0"
+    "default": "人面星を取ると、開くので、ございます。"
   },
   "serifu4-1": {
     "description":
       "グレネードかジェットをくれる人,メッセージの人2のセリフ2（1行目）",
     "type": "string",
-    "default": "そのアイテムは、オレの宝物だったんだ。"
+    "default": "LAST STAGEというのは、最終面の事ですわ。"
   },
   "serifu4-2": {
     "description":
       "グレネードかジェットをくれる人,メッセージの人2のセリフ2（2行目）",
     "type": "string",
-    "default": "有効に使ってくれよな。"
+    "default": "これをクリアーすると、エンディングに、"
   },
   "serifu4-3": {
     "description":
       "グレネードかジェットをくれる人,メッセージの人2のセリフ2（3行目）",
     "type": "string",
-    "default": "0"
+    "default": "行けますのよ。がんばって下さいね。"
   },
   "serifu5-1": {
     "description": "ショップ店員のセリフ1（1行目）",
@@ -3849,7 +3849,7 @@
   "serifu8-1": {
     "description": "ショップ店員のセリフ(地図)（1行目）",
     "type": "string",
-    "default": "本日の営業は、終了しました。"
+    "default": "本日の営業は、終了いたしました。"
   },
   "serifu8-2": {
     "description": "ショップ店員のセリフ(地図)（2行目）",
@@ -3932,7 +3932,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-1": {
+  "serifu_key1_on-1": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（1行目）",
     "type": "string",
     "default": "ここから先へ進むには、",
@@ -3940,7 +3940,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-10": {
+  "serifu_key1_on-10": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ8",
     "type": "string",
     "default": "お気を付けて。",
@@ -3948,7 +3948,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-2": {
+  "serifu_key1_on-2": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（2行目）",
     "type": "string",
     "default": "３つのＫＥＹ１が必要です。",
@@ -3956,7 +3956,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-3": {
+  "serifu_key1_on-3": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ（3行目）",
     "type": "string",
     "default": "この世界のどこかに、あるはず。",
@@ -3964,7 +3964,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-4": {
+  "serifu_key1_on-4": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ2",
     "type": "string",
     "default": "ＫＥＹ１を３つ、わたしますか？",
@@ -3972,7 +3972,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-5": {
+  "serifu_key1_on-5": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ3",
     "type": "string",
     "default": "はい",
@@ -3980,7 +3980,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-6": {
+  "serifu_key1_on-6": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ4",
     "type": "string",
     "default": "いいえ",
@@ -3988,7 +3988,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-7": {
+  "serifu_key1_on-7": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ5",
     "type": "string",
     "default": "ＫＥＹ１を３つ、持っていません。",
@@ -3996,7 +3996,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-8": {
+  "serifu_key1_on-8": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ6",
     "type": "string",
     "default": "先へ進む道が、開けました。",
@@ -4004,7 +4004,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-9": {
+  "serifu_key1_on-9": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人のセリフ7",
     "type": "string",
     "default": "勇者殿、",
@@ -4012,7 +4012,7 @@
       "2.8": false
     }
   },
-  "serifu_key1-on-name": {
+  "serifu_key1_on_name": {
     "description": "ＫＥＹ１が３つでＯＮの動作の人の名前",
     "type": "string",
     "default": "お姫様",
@@ -4020,7 +4020,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-1": {
+  "serifu_key2_on-1": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（1行目）",
     "type": "string",
     "default": "３つのＫＥＹ２がないと、",
@@ -4028,7 +4028,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-10": {
+  "serifu_key2_on-10": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ8",
     "type": "string",
     "default": "0",
@@ -4036,7 +4036,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-2": {
+  "serifu_key2_on-2": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（2行目）",
     "type": "string",
     "default": "ここから先へは進めないぜ。",
@@ -4044,15 +4044,15 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-3": {
+  "serifu_key2_on-3": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ（3行目）",
     "type": "string",
-    "default": "どこかで見つけてくれ。",
+    "default": "どこかで見つ付けてくれ。",
     "version": {
       "2.8": false
     }
   },
-  "serifu_key2-on-4": {
+  "serifu_key2_on-4": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ2",
     "type": "string",
     "default": "ＫＥＹ２を３つ、わたしますか？",
@@ -4060,7 +4060,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-5": {
+  "serifu_key2_on-5": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ3",
     "type": "string",
     "default": "はい",
@@ -4068,7 +4068,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-6": {
+  "serifu_key2_on-6": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ4",
     "type": "string",
     "default": "いいえ",
@@ -4076,7 +4076,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-7": {
+  "serifu_key2_on-7": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ5",
     "type": "string",
     "default": "ＫＥＹ２を３つ、持っていません。",
@@ -4084,7 +4084,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-8": {
+  "serifu_key2_on-8": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ6",
     "type": "string",
     "default": "３つのＫＥＹ２、受け取ったぜ。",
@@ -4092,7 +4092,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-9": {
+  "serifu_key2_on-9": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人のセリフ7",
     "type": "string",
     "default": "これで、先へ進めるようになったな。",
@@ -4100,7 +4100,7 @@
       "2.8": false
     }
   },
-  "serifu_key2-on-name": {
+  "serifu_key2_on_name": {
     "description": "ＫＥＹ２が３つでＯＮの動作の人の名前",
     "type": "string",
     "default": "ザトシ",
@@ -4211,7 +4211,7 @@
   "shop_item_teika7": {
     "description": "アイテムの値段(7)[0で無くなる]",
     "type": "integer",
-    "default": "80"
+    "default": "300"
   },
   "shop_item_teika8": {
     "description": "アイテムの値段(8)[0で無くなる]",
@@ -4369,22 +4369,22 @@
   "url1": {
     "description": "リンク土管1の移動先",
     "type": "string",
-    "default": "http://www.t3.rim.or.jp/~naoto/naoto.html"
+    "default": "http://www.yahoo.co.jp/"
   },
   "url2": {
     "description": "リンク土管2の移動先",
     "type": "string",
-    "default": "http://www.t3.rim.or.jp/~naoto/j_con/index.html"
+    "default": "http://www.yahoo.co.jp/"
   },
   "url3": {
     "description": "リンク土管3の移動先",
     "type": "string",
-    "default": "http://www.t3.rim.or.jp/~naoto/naoto.html"
+    "default": "http://www.yahoo.co.jp/"
   },
   "url4": {
     "description": "リンク土管4の移動先",
     "type": "string",
-    "default": "http://www.t3.rim.or.jp/~naoto/j_con/index.html"
+    "default": "http://www.t3.rim.or.jp/~naoto/naoto.html"
   },
   "view_move_type": {
     "description": "表示領域の動き方",
@@ -4435,7 +4435,7 @@
         "description": "常に表示する"
       }
     ],
-    "default": "2",
+    "default": "1",
     "version": {
       "2.8": false
     }

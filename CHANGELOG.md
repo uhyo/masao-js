@@ -1,3 +1,6 @@
+# v0.1.7
+- Changed some default param value to align with mc_canvas.
+
 # v0.1.6
 - Changed some default param value to align with mc_canvas.
 
