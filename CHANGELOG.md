@@ -1,3 +1,6 @@
+# v0.1.8
+- Added `param.minimizeMapData` function.
+
 # v0.1.7
 - Changed some default param value to align with mc_canvas.
 
