@@ -62,10 +62,6 @@ for (const n of athletics.names) {
 }
 
 //マップ系を追加
-let map_df = '';
-for (let i = 0; i < 60; i++) {
-  map_df += '.';
-}
 for (let h = 0; h < 4; h++) {
   const ssfx = ['', '-s', '-t', '-f'][h];
   for (let i = 0; i < 3; i++) {
@@ -74,12 +70,13 @@ for (let h = 0; h < 4; h++) {
       data['map' + i + '-' + j + ssfx] = {
         description: 'マップ' + i + '-' + j + stg,
         type: 'map',
-        default: map_df,
+        default: '.',
       };
     }
   }
 }
-for (let i = 0; i < 60; i++) {
+let map_df = '';
+for (let i = 0; i < 120; i++) {
   map_df += '.';
 }
 for (let h = 0; h < 4; h++) {
@@ -346,6 +343,90 @@ export function cutUnadvancedData(params: Params): Params {
       continue;
     }
     result[key] = params[key];
+  }
+  return result;
+}
+
+/**
+ * Minimizes map params and returns a new params object.
+ */
+export function minimizeMapData(params: Params): Params {
+  const result: Params = {};
+  // まず関係ないparamたちをコピー
+  for (const key in params) {
+    const pd = data[key];
+    if (pd != null && (pd.type === 'map' || pd.type === 'layer')) {
+      continue;
+    }
+    result[key] = params[key];
+  }
+  // ステージ1〜4に対してmapをチェック
+  for (const prefix of ['', '-s', '-t', '-f']) {
+    let emptyflg = true;
+    for (let i = 0; i < 30; i++) {
+      // マップを全部結合
+      const allmap =
+        (params[`map0-${i}${prefix}`] || '.') +
+        (params[`map1-${i}${prefix}`] || '.') +
+        (params[`map2-${i}${prefix}`] || '.');
+      // 右側の.を取り除く
+      let length = allmap.length;
+      if (length > 180) {
+        length = 180;
+      }
+      while (length > 0 && allmap[length - 1] === '.') {
+        length--;
+      }
+      if (length > 0) {
+        // このマップは空白ではない
+        emptyflg = false;
+        // 書き込む
+        if (length > 120) {
+          result[`map0-${i}${prefix}`] = allmap.slice(0, 60);
+          result[`map1-${i}${prefix}`] = allmap.slice(60, 120);
+          result[`map2-${i}${prefix}`] = allmap.slice(120, length);
+        } else if (length > 60) {
+          result[`map0-${i}${prefix}`] = allmap.slice(0, 60);
+          result[`map1-${i}${prefix}`] = allmap.slice(60, length);
+        } else {
+          result[`map0-${i}${prefix}`] = allmap.slice(0, length);
+        }
+      }
+    }
+    if (emptyflg && prefix === '') {
+      // ステージ1が完全にemptyだとサンプルステージ1になってしまう
+      result['map0-0'] = '..';
+    }
+    // レイヤー
+    let layer_df = '';
+    for (let i = 0; i < 120; i++) {
+      layer_df += '.';
+    }
+    for (let i = 0; i < 30; i++) {
+      const allmap =
+        (params[`layer0-${i}${prefix}`] || layer_df) +
+        (params[`layer1-${i}${prefix}`] || layer_df) +
+        (params[`layer2-${i}${prefix}`] || layer_df);
+      // 右側の.を取り除く
+      let length = allmap.length;
+      if (length > 360) {
+        length = 360;
+      }
+      while (length > 0 && allmap[length - 1] === '.') {
+        length--;
+      }
+      // 書き込む
+      if (length > 240) {
+        result[`layer0-${i}${prefix}`] = allmap.slice(0, 120);
+        result[`layer1-${i}${prefix}`] = allmap.slice(120, 240);
+        result[`layer2-${i}${prefix}`] = allmap.slice(240, length);
+      } else if (length > 120) {
+        result[`layer0-${i}${prefix}`] = allmap.slice(0, 120);
+        result[`layer1-${i}${prefix}`] = allmap.slice(120, length);
+      } else if (length > 0) {
+        result[`layer0-${i}${prefix}`] = allmap.slice(0, length);
+      }
+    }
   }
   return result;
 }
