@@ -570,15 +570,18 @@
   },
   "filename_chizu": {
     "description": "地図画面の背景のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "default": ""
   },
   "filename_ending": {
     "description": "エンディング画面のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "default": ""
   },
   "filename_fx_bgm_boss": {
     "description": "ボスBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -586,6 +589,7 @@
   "filename_fx_bgm_chizu": {
     "description": "地図画面のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -593,6 +597,7 @@
   "filename_fx_bgm_ending": {
     "description": "エンディング画面のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -600,6 +605,7 @@
   "filename_fx_bgm_stage1": {
     "description": "ステージ１のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -607,6 +613,7 @@
   "filename_fx_bgm_stage2": {
     "description": "ステージ2のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -614,6 +621,7 @@
   "filename_fx_bgm_stage3": {
     "description": "ステージ3のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -621,6 +629,7 @@
   "filename_fx_bgm_stage4": {
     "description": "ステージ4のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -628,17 +637,20 @@
   "filename_fx_bgm_title": {
     "description": "タイトル画面のBGM",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
   },
   "filename_gameover": {
     "description": "ゲームオーバー画面のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "default": ""
   },
   "filename_haikei": {
     "description": "ステージ1背景のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -646,6 +658,7 @@
   "filename_haikei2": {
     "description": "ステージ2背景のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -653,6 +666,7 @@
   "filename_haikei3": {
     "description": "ステージ3背景のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -660,6 +674,7 @@
   "filename_haikei4": {
     "description": "ステージ4背景のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -667,6 +682,7 @@
   "filename_mapchip": {
     "description": "背景レイヤーチップのファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -674,6 +690,7 @@
   "filename_oriboss_left1": {
     "description": "オリジナルボスの画像　左向き1",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -682,6 +699,7 @@
   "filename_oriboss_left2": {
     "description": "オリジナルボスの画像　左向き2",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -690,6 +708,7 @@
   "filename_oriboss_right1": {
     "description": "オリジナルボスの画像　右向き1",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -698,6 +717,7 @@
   "filename_oriboss_right2": {
     "description": "オリジナルボスの画像　右向き2",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -706,6 +726,7 @@
   "filename_oriboss_tubure_left": {
     "description": "オリジナルボスの画像 潰れた左向き",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -714,6 +735,7 @@
   "filename_oriboss_tubure_right": {
     "description": "オリジナルボスの画像 潰れた右向き",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -721,11 +743,13 @@
   },
   "filename_pattern": {
     "description": "キャラクターパターンのファイル名",
-    "type": "resource"
+    "type": "resource",
+    "default": ""
   },
   "filename_se_block": {
     "description": "ブロックを破壊",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -733,6 +757,7 @@
   "filename_se_bomb": {
     "description": "エアームズの爆弾",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -740,6 +765,7 @@
   "filename_se_chizugamen": {
     "description": "地図画面からステージへ入る",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -747,6 +773,7 @@
   "filename_se_clear": {
     "description": "ステージクリア",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -754,6 +781,7 @@
   "filename_se_coin": {
     "description": "コインを取る、？ブロックからコインが出る",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -761,6 +789,7 @@
   "filename_se_dengeki": {
     "description": "ピカチーの電撃",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -768,6 +797,7 @@
   "filename_se_dokan": {
     "description": "土管に入る",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -775,6 +805,7 @@
   "filename_se_dosun": {
     "description": "ドッスンスンが落ちる",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -782,6 +813,7 @@
   "filename_se_fireball": {
     "description": "ファイヤーボール発射、スイッチ",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -789,6 +821,7 @@
   "filename_se_fumu": {
     "description": "敵を踏む",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -796,6 +829,7 @@
   "filename_se_gameover": {
     "description": "ゲームオーバー",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -803,6 +837,7 @@
   "filename_se_get": {
     "description": "アイテムを取る、扉が開く",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -810,6 +845,7 @@
   "filename_se_grounder": {
     "description": "噴火、サイコクラッシャーアタック",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -817,6 +853,7 @@
   "filename_se_happa": {
     "description": "はっぱカッター、ソーラービーム",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -824,6 +861,7 @@
   "filename_se_hinoko": {
     "description": "火の粉、破壊光線",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -831,6 +869,7 @@
   "filename_se_item": {
     "description": "？ブロックからアイテムが出る",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -838,6 +877,7 @@
   "filename_se_jet": {
     "description": "ジェット、昇龍拳",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -845,6 +885,7 @@
   "filename_se_jump": {
     "description": "ジャンプ",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -852,6 +893,7 @@
   "filename_se_kaiole": {
     "description": "水の波動、流星キック",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -859,6 +901,7 @@
   "filename_se_kiki": {
     "description": "滑る",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -866,6 +909,7 @@
   "filename_se_miss": {
     "description": "自分が死んだ",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -873,6 +917,7 @@
   "filename_se_mizu": {
     "description": "水しぶき",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -880,6 +925,7 @@
   "filename_se_mizudeppo": {
     "description": "水鉄砲",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -887,6 +933,7 @@
   "filename_se_senkuuza": {
     "description": "グレネード、りゅうせいぐん、ロケット頭突き、スカイアッパー",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -894,6 +941,7 @@
   "filename_se_sjump": {
     "description": "スーパージャンプ、ジャンプ台でジャンプ、横へ飛ばすバネ",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -901,6 +949,7 @@
   "filename_se_start": {
     "description": "ゲームスタート",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -908,6 +957,7 @@
   "filename_se_tobasu": {
     "description": "ファイヤーボール等で敵を倒す",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -915,6 +965,7 @@
   "filename_second_haikei": {
     "description": "ステージ1セカンド画像のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -922,6 +973,7 @@
   "filename_second_haikei2": {
     "description": "ステージ2セカンド画像のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -929,6 +981,7 @@
   "filename_second_haikei3": {
     "description": "ステージ3セカンド画像のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
@@ -936,17 +989,20 @@
   "filename_second_haikei4": {
     "description": "ステージ4セカンド画像のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false
     }
   },
   "filename_title": {
     "description": "タイトル画面のファイル名",
-    "type": "resource"
+    "type": "resource",
+    "default": ""
   },
   "filename_ximage1": {
     "description": "Ｘ座標指定画像１のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -955,6 +1011,7 @@
   "filename_ximage2": {
     "description": "Ｘ座標指定画像２のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -963,6 +1020,7 @@
   "filename_ximage3": {
     "description": "Ｘ座標指定画像３のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -971,6 +1029,7 @@
   "filename_ximage4": {
     "description": "Ｘ座標指定画像４のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -1333,12 +1392,12 @@
   "hitokoto1-2": {
     "description": "一言メッセージ1のセリフ（2行目）",
     "type": "string",
-    "default": "プレイ画面でも、こんなセリフを、"
+    "default": "0"
   },
   "hitokoto1-3": {
     "description": "一言メッセージ1のセリフ（3行目）",
     "type": "string",
-    "default": "入れられるように、なったんだ。"
+    "default": "0"
   },
   "hitokoto1_name": {
     "description": "一言メッセージ1の名前",
@@ -1353,12 +1412,12 @@
   "hitokoto2-2": {
     "description": "一言メッセージ2のセリフ（2行目）",
     "type": "string",
-    "default": "ゆうきの証、ミレニアム人面星が"
+    "default": "0"
   },
   "hitokoto2-3": {
     "description": "一言メッセージ2のセリフ（3行目）",
     "type": "string",
-    "default": "あなたを、待っていますよ。"
+    "default": "0"
   },
   "hitokoto2_name": {
     "description": "一言メッセージ2の名前",
@@ -1373,7 +1432,7 @@
   "hitokoto3-2": {
     "description": "一言メッセージ3のセリフ（2行目）",
     "type": "string",
-    "default": "ぜったい、なってやるーー。"
+    "default": "0"
   },
   "hitokoto3-3": {
     "description": "一言メッセージ3のセリフ（3行目）",
@@ -1388,17 +1447,17 @@
   "hitokoto4-1": {
     "description": "一言メッセージ4のセリフ（1行目）",
     "type": "string",
-    "default": "あたし、クリス。ペットのピカチーが、"
+    "default": "んちゃ！"
   },
   "hitokoto4-2": {
     "description": "一言メッセージ4のセリフ（2行目）",
     "type": "string",
-    "default": "どこかに行っちゃったの。"
+    "default": "0"
   },
   "hitokoto4-3": {
     "description": "一言メッセージ4のセリフ（3行目）",
     "type": "string",
-    "default": "こまったわね、ぐすん。"
+    "default": "0"
   },
   "hitokoto4_name": {
     "description": "一言メッセージ4の名前",
@@ -4384,6 +4443,7 @@
   "x_backimage1_filename": {
     "description": "X座標指定背景画像1のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -4401,6 +4461,7 @@
   "x_backimage2_filename": {
     "description": "X座標指定背景画像2のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -4418,6 +4479,7 @@
   "x_backimage3_filename": {
     "description": "X座標指定背景画像3のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
@@ -4435,6 +4497,7 @@
   "x_backimage4_filename": {
     "description": "X座標指定背景画像4のファイル名",
     "type": "resource",
+    "default": "",
     "version": {
       "2.8": false,
       "fx": false
