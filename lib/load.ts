@@ -1,101 +1,110 @@
 // Load HTML (requires Browser API!)
-import {
-    MasaoJSONFormat,
-    make,
-} from './format';
-import {
-    sanitize,
-} from './param';
+import { MasaoJSONFormat, make } from './format';
+import { sanitize } from './param';
 
-export function html(source: string): Promise<MasaoJSONFormat | null>{
-    return new Promise<any>((resolve, _reject)=>{
-        // DOMParser
-        const parser = new DOMParser();
+export function html(source: string): Promise<MasaoJSONFormat | null> {
+  return new Promise<any>((resolve, _reject) => {
+    // DOMParser
+    const parser = new DOMParser();
 
-        const htmldoc = parser.parseFromString(source, 'text/html');
+    const htmldoc = parser.parseFromString(source, 'text/html');
 
-        const titleelm = htmldoc.querySelector('title');
-        const title = (titleelm && titleelm.textContent) || null;
-
-        // 正男を探す(まずはapplet/object)
-        const applets = Array.from<HTMLElement>(htmldoc.querySelectorAll('applet, object') as any);
-
-        for (let a of applets){
-            if (a.tagName === 'APPLET'){
-                // applet!
-                const code = a.getAttribute('code') || '';
-                const archive = a.getAttribute('archive') || '';
-                const version = getVersion(code, archive);
-                if (version == null){
-                    continue;
-                }
-                const ps = Array.from<HTMLParamElement>(a.getElementsByTagName('param'));
-                const params: Record<string, string> = {};
-                for (let p of ps){
-                    params[p.name] = p.value;
-                }
-                resolve(make({
-                    params,
-                    version,
-                    metadata: title ? {
-                        title,
-                    } : void 0,
-                }));
-                return;
-            }else if (a.tagName === 'OBJECT'){
-                // object!
-                const type = a.getAttribute('type') || '';
-                if (/^application\/x-java-applet$/i.test(type)){
-                    // 正男かも
-                    const ps = Array.from<HTMLParamElement>(a.getElementsByTagName('param'));
-                    const params: Record<string, string> = {};
-
-                    let code;
-                    let archive;
-                    for (let p of ps){
-                        if (/^classid$/i.test(p.name)){
-                            const re = p.value.match(/^java:(.+)$/);
-                            if (re == null){
-                                continue;
-                            }
-                            code = re[1];
-                        }else if (/^archive$/i.test(p.name)){
-                            archive = p.value;
-                        }else{
-                            params[p.name] = p.value;
-                        }
-                    }
-                    if (code == null || archive == null){
-                        continue;
-                    }
-                    const version = getVersion(code, archive);
-                    if (version == null){
-                        continue;
-                    }
-                    resolve(make({
-                        params: sanitize(params, version),
-                        version,
-                        metadata: title ? {
-                            title,
-                        } : void 0,
-                    }));
-                    return;
-                }
-            }
-        }
-
-        // applet, objectは無かった
-        resolve(runCanvas(htmldoc));
-    });
-}
-
-function runCanvas(htmldoc: HTMLDocument): Promise<MasaoJSONFormat | null>{
     const titleelm = htmldoc.querySelector('title');
     const title = (titleelm && titleelm.textContent) || null;
 
-    // canvas正男を動作させる
-    // Web Workerを作る
-    let worker = `
+    // 正男を探す(まずはapplet/object)
+    const applets = Array.from<HTMLElement>(htmldoc.querySelectorAll(
+      'applet, object',
+    ) as any);
+
+    for (let a of applets) {
+      if (a.tagName === 'APPLET') {
+        // applet!
+        const code = a.getAttribute('code') || '';
+        const archive = a.getAttribute('archive') || '';
+        const version = getVersion(code, archive);
+        if (version == null) {
+          continue;
+        }
+        const ps = Array.from<HTMLParamElement>(
+          a.getElementsByTagName('param'),
+        );
+        const params: Record<string, string> = {};
+        for (let p of ps) {
+          params[p.name] = p.value;
+        }
+        resolve(
+          make({
+            params,
+            version,
+            metadata: title
+              ? {
+                  title,
+                }
+              : void 0,
+          }),
+        );
+        return;
+      } else if (a.tagName === 'OBJECT') {
+        // object!
+        const type = a.getAttribute('type') || '';
+        if (/^application\/x-java-applet$/i.test(type)) {
+          // 正男かも
+          const ps = Array.from<HTMLParamElement>(
+            a.getElementsByTagName('param'),
+          );
+          const params: Record<string, string> = {};
+
+          let code;
+          let archive;
+          for (let p of ps) {
+            if (/^classid$/i.test(p.name)) {
+              const re = p.value.match(/^java:(.+)$/);
+              if (re == null) {
+                continue;
+              }
+              code = re[1];
+            } else if (/^archive$/i.test(p.name)) {
+              archive = p.value;
+            } else {
+              params[p.name] = p.value;
+            }
+          }
+          if (code == null || archive == null) {
+            continue;
+          }
+          const version = getVersion(code, archive);
+          if (version == null) {
+            continue;
+          }
+          resolve(
+            make({
+              params: sanitize(params, version),
+              version,
+              metadata: title
+                ? {
+                    title,
+                  }
+                : void 0,
+            }),
+          );
+          return;
+        }
+      }
+    }
+
+    // applet, objectは無かった
+    resolve(runCanvas(htmldoc));
+  });
+}
+
+function runCanvas(htmldoc: HTMLDocument): Promise<MasaoJSONFormat | null> {
+  const titleelm = htmldoc.querySelector('title');
+  const title = (titleelm && titleelm.textContent) || null;
+
+  // canvas正男を動作させる
+  // Web Workerを作る
+  let worker = `
 CanvasMasao = {
     Game: function Game(params, id, options){
         if (options == null) {
@@ -111,16 +120,19 @@ CanvasMasao = {
 };
 JSMasao = CanvasMasao;
 `;
-    const scripts = htmldoc.querySelectorAll('script');
-    for (const s of Array.from<HTMLScriptElement>(scripts)){
-        if (!s.src && (!s.type || /^(?:text|application)\/javascript$/.test(s.type))){
-            // srcがないものを全部突っ込む
-            worker += `;${s.textContent};`;
-        }
+  const scripts = htmldoc.querySelectorAll('script');
+  for (const s of Array.from<HTMLScriptElement>(scripts)) {
+    if (
+      !s.src &&
+      (!s.type || /^(?:text|application)\/javascript$/.test(s.type))
+    ) {
+      // srcがないものを全部突っ込む
+      worker += `;${s.textContent};`;
     }
-    // sandbox iframeを作る
-    worker = worker.replace(/\u2028|\u2029/g, ' ');
-    const inject = `
+  }
+  // sandbox iframeを作る
+  worker = worker.replace(/\u2028|\u2029/g, ' ');
+  const inject = `
 <!doctype html>
 <html><head><title>sandbox</title></head>
 <body>
@@ -159,70 +171,76 @@ setTimeout(function(){
 </html>
 `;
 
-    // これをiframeで開く
-    const blob = new Blob([inject], {
-        type: 'text/html',
-    });
-    const url = URL.createObjectURL(blob);
+  // これをiframeで開く
+  const blob = new Blob([inject], {
+    type: 'text/html',
+  });
+  const url = URL.createObjectURL(blob);
 
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = url;
-    iframe.sandbox.add('allow-scripts');
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = url;
+  iframe.sandbox.add('allow-scripts');
 
-    return new Promise<MasaoJSONFormat | null>(resolve=>{
+  return new Promise<MasaoJSONFormat | null>(resolve => {
+    // random
+    const handler = (ev: MessageEvent) => {
+      if (ev.data != null) {
+        // ゲームを受け取った
+        if (timeout != null) {
+          clearTimeout(timeout);
+        }
+        timeout = null;
+        window.removeEventListener('message', handler, false);
 
-        // random
-        const handler = (ev: MessageEvent)=>{
-            if (ev.data != null){
-                // ゲームを受け取った
-                if (timeout != null){
-                    clearTimeout(timeout);
+        // makeがthrowするかも
+        resolve(
+          make({
+            params: ev.data.params,
+            version: 'fx16',
+            'advanced-map': ev.data['advanced-map'],
+            metadata: title
+              ? {
+                  title,
                 }
-                timeout = null;
-                window.removeEventListener('message', handler, false);
+              : void 0,
+          }),
+        );
+      }
+    };
+    let timeout: any = setTimeout(() => {
+      window.removeEventListener('message', handler, false);
+      resolve(null);
+    }, 3000);
 
-                // makeがthrowするかも
-                resolve(make({
-                    params: ev.data.params,
-                    version: 'fx16',
-                    'advanced-map': ev.data['advanced-map'],
-                    metadata: title ? {
-                        title,
-                    } : void 0,
-                }));
-            }
-        };
-        let timeout: any = setTimeout(()=>{
-            window.removeEventListener('message', handler, false);
-            resolve(null);
-        }, 3000);
+    window.addEventListener('message', handler, false);
 
-        window.addEventListener('message', handler, false);
-
-        // 通信開始
-        document.body.appendChild(iframe);
-        setTimeout(()=>{
-            iframe.contentWindow.postMessage('ping', '*');
-        }, 250);
-    }).then(result=>{
-        document.body.removeChild(iframe);
-        return result;
-    });
+    // 通信開始
+    document.body.appendChild(iframe);
+    setTimeout(() => {
+      iframe.contentWindow.postMessage('ping', '*');
+    }, 250);
+  }).then(result => {
+    document.body.removeChild(iframe);
+    return result;
+  });
 }
 
 // code, archiveからversionを推定
-function getVersion(code: string, archive: string): '2.8' | 'fx16' | 'kani2' | null{
-    if (/^(?:MasaoConstruction|MasaoJSS)(?:\.class)?$/i.test(code)){
-        // 正男っぽい
-        // バージョン判定
-        if (/\.zip$/i.test(archive)){
-            return '2.8';
-        }else{
-            return 'fx16';
-        }
-    }else if(/^MasaoKani2?(?:\.class)$/i.test(code)){
-        return 'kani2';
+function getVersion(
+  code: string,
+  archive: string,
+): '2.8' | 'fx16' | 'kani2' | null {
+  if (/^(?:MasaoConstruction|MasaoJSS)(?:\.class)?$/i.test(code)) {
+    // 正男っぽい
+    // バージョン判定
+    if (/\.zip$/i.test(archive)) {
+      return '2.8';
+    } else {
+      return 'fx16';
     }
-    return null;
+  } else if (/^MasaoKani2?(?:\.class)$/i.test(code)) {
+    return 'kani2';
+  }
+  return null;
 }

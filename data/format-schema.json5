@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "anyOf": [
-    {"$ref": "#/definitions/format-draft-1"},
-    {"$ref": "#/definitions/format-draft-2"},
-    {"$ref": "#/definitions/format-draft-3"},
-    {"$ref": "#/definitions/format-draft-4"},
+    { "$ref": "#/definitions/format-draft-1" },
+    { "$ref": "#/definitions/format-draft-2" },
+    { "$ref": "#/definitions/format-draft-3" },
+    { "$ref": "#/definitions/format-draft-4" }
   ],
   "definitions": {
     // schema for parts
@@ -13,36 +13,57 @@
       "type": "object",
       "properties": {
         "title": {
-          "type": "string",
+          "type": "string"
         },
         "author": {
-          "type": "string",
+          "type": "string"
         },
         "editor": {
-          "type": "string",
-        },
-      },
+          "type": "string"
+        }
+      }
     },
     "params": {
       "id": "#params",
       "type": "object",
       "additionalProperties": {
-        "type": "string",
-      },
+        "type": "string"
+      }
     },
     "version": {
       "id": "#version",
       "type": "string",
       "enum": [
-        "2.7","2.8","2.81","2.9",
-        "3.0","3.11","3.12",
-        "fx","fx2","fx3","fx4","fx5","fx6","fx7","fx8","fx9","fx10","fx11","fx12","fx13","fx14","fx15","fx16",
-        "kani","kani2",
-      ],
+        "2.7",
+        "2.8",
+        "2.81",
+        "2.9",
+        "3.0",
+        "3.11",
+        "3.12",
+        "fx",
+        "fx2",
+        "fx3",
+        "fx4",
+        "fx5",
+        "fx6",
+        "fx7",
+        "fx8",
+        "fx9",
+        "fx10",
+        "fx11",
+        "fx12",
+        "fx13",
+        "fx14",
+        "fx15",
+        "fx16",
+        "kani",
+        "kani2"
+      ]
     },
     "script": {
       "id": "#script",
-      "type": ["null", "string"],
+      "type": ["null", "string"]
     },
     "advanced-map": {
       "id": "#advanced-map",
@@ -52,99 +73,82 @@
         },
         {
           "type": "object",
-          "required": [
-            "stages",
-          ],
+          "required": ["stages"],
           "properties": {
             "stages": {
               "type": "array",
               "items": {
                 "type": "object",
-                "required": [
-                  "size",
-                  "layers",
-                ],
+                "required": ["size", "layers"],
                 "properties": {
                   "size": {
                     "type": "object",
-                    "required": [
-                      "x",
-                      "y",
-                    ],
+                    "required": ["x", "y"],
                     "properties": {
                       "x": {
                         "type": "number",
                         "multipleOf": 1,
                         "minimum": 16,
-                        "exclusiveMinimum": false,
+                        "exclusiveMinimum": false
                       },
                       "y": {
                         "type": "number",
                         "multipleOf": 1,
                         "minimum": 10,
-                        "exclusiveMinimum": false,
-                      },
-                    },
+                        "exclusiveMinimum": false
+                      }
+                    }
                   },
                   "layers": {
                     "type": "array",
                     "item": {
                       "type": "object",
-                      "required": [
-                        "type",
-                        "map",
-                      ],
+                      "required": ["type", "map"],
                       "properties": {
                         "id": {
-                          "type": "string",
+                          "type": "string"
                         },
                         "type": {
                           // XXX: exactly one item of `layers` have to "main" type
                           "type": "string",
-                          "enum": [
-                            "main",
-                            "mapchip",
-                          ],
+                          "enum": ["main", "mapchip"]
                         },
                         "src": {
-                          "type": "string",
+                          "type": "string"
                         },
                         "map": {
                           "type": "array",
                           "items": {
                             "type": "array",
                             "items": {
-                              "type": ["number", "string"],
-                            },
-                          },
-                        },
-                      },
+                              "type": ["number", "string"]
+                            }
+                          }
+                        }
+                      }
                     }
-                  },
-                },
-              },
+                  }
+                }
+              }
             },
             "customParts": {
               "type": "object",
               "additionalProperties": {
                 "type": "object",
-                "required": [
-                  "extends",
-                  "properties",
-                ],
+                "required": ["extends", "properties"],
                 "properties": {
                   "extends": {
-                    "type": ["number", "string"],
+                    "type": ["number", "string"]
                   },
                   "properties": {
-                    "type": "object",
-                  },
-                },
-              },
-            },
-          },
-        },
-      ],
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     },
 
     // schema for whole format
@@ -153,68 +157,54 @@
       "properties": {
         "masao-json-format-version": {
           "type": "string",
-          "enum": ["draft-1"],
+          "enum": ["draft-1"]
         },
         "metadata": { "$ref": "#/definitions/metadata" },
-        "params": { "$ref": "#/definitions/params" },
+        "params": { "$ref": "#/definitions/params" }
       },
-      "required": [
-        "masao-json-format-version",
-      ],
+      "required": ["masao-json-format-version"]
     },
     "format-draft-2": {
       "type": "object",
       "properties": {
         "masao-json-format-version": {
           "type": "string",
-          "enum": ["draft-2"],
+          "enum": ["draft-2"]
         },
         "version": { "$ref": "#/definitions/version" },
         "metadata": { "$ref": "#/definitions/metadata" },
-        "params": { "$ref": "#/definitions/params" },
+        "params": { "$ref": "#/definitions/params" }
       },
-      "required": [
-        "masao-json-format-version",
-        "version",
-        "params",
-      ],
+      "required": ["masao-json-format-version", "version", "params"]
     },
     "format-draft-3": {
       "type": "object",
       "properties": {
         "masao-json-format-version": {
           "type": "string",
-          "enum": ["draft-3"],
+          "enum": ["draft-3"]
         },
         "version": { "$ref": "#/definitions/version" },
         "metadata": { "$ref": "#/definitions/metadata" },
         "params": { "$ref": "#/definitions/params" },
-        "script": { "$ref": "#/definitions/script" },
+        "script": { "$ref": "#/definitions/script" }
       },
-      "required": [
-        "masao-json-format-version",
-        "version",
-        "params",
-      ],
+      "required": ["masao-json-format-version", "version", "params"]
     },
     "format-draft-4": {
       "type": "object",
       "properties": {
         "masao-json-format-version": {
           "type": "string",
-          "enum": ["draft-4"],
+          "enum": ["draft-4"]
         },
         "version": { "$ref": "#/definitions/version" },
         "metadata": { "$ref": "#/definitions/metadata" },
         "params": { "$ref": "#/definitions/params" },
         "script": { "$ref": "#/definitions/script" },
-        "advanced-map": { "$ref": "#/definitions/advanced-map" },
+        "advanced-map": { "$ref": "#/definitions/advanced-map" }
       },
-      "required": [
-        "masao-json-format-version",
-        "version",
-        "params",
-      ],
-    },
-  },
+      "required": ["masao-json-format-version", "version", "params"]
+    }
+  }
 }

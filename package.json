@@ -14,7 +14,11 @@
     "watch:tsc": "tsc --watch",
     "watch:json": "cpx \"data/*.json\" dist/ -uw",
     "watch:json5": "./build/json5.js data/ dist/ --watch",
+    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{json,ts}": ["prettier --write", "git add"]
   },
   "repository": {
     "type": "git",
@@ -35,8 +39,11 @@
     "@types/node": "^9.4.7",
     "cpx": "^1.5.0",
     "glob": "^7.1.1",
+    "husky": "^0.14.3",
     "json5": "^1.0.1",
+    "lint-staged": "^7.0.0",
     "npm-run-all": "^4.0.1",
+    "prettier": "^1.11.1",
     "rimraf": "^2.6.2",
     "typescript": "^2.7.2",
     "watch": "^1.0.1"
