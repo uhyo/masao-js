@@ -22,11 +22,13 @@ export function checkAdvancedMap(map: AdvancedMap): void {
         }
         main_flg = true;
       }
-      if (map.length !== size.y) {
+      // マップサイズが大きすぎるのはだめ
+      // （最小化のため小さいのは許す）
+      if (map.length > size.y) {
         throw new Error('Invalid map size');
       }
       for (const row of map) {
-        if (row.length !== size.x) {
+        if (row.length > size.x) {
           throw new Error('Invalid map size');
         }
         if (type === 'mapchip') {

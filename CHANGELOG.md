@@ -1,3 +1,7 @@
+# v0.1.9
+- Added `param.minimizeAdvancedData` function.
+- `format.load` now allows minimized advanced-map data. Previously it was required that map and layer arrays have an exact width×height shape.
+
 # v0.1.8
 - Added `param.minimizeMapData` function.
 
