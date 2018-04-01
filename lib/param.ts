@@ -1,3 +1,5 @@
+import { AdvancedMap } from './format';
+
 //Canvas Masao Params
 export type Params = Record<string, string>;
 
@@ -428,6 +430,63 @@ export function minimizeMapData(params: Params): Params {
       }
     }
   }
+  return result;
+}
+
+/**
+ * Minimize advanced map data and return a new object.
+ */
+export function minimizeAdvancedData(data: AdvancedMap): AdvancedMap {
+  const stages = data.stages.map(stage => {
+    return {
+      size: { ...stage.size },
+      layers: stage.layers.map(layer => {
+        return {
+          id: layer.id,
+          type: layer.type,
+          src: layer.src,
+          map: minimizeMapArray(layer.map),
+        };
+      }),
+    };
+  });
+  const result: AdvancedMap = {
+    stages,
+  };
+  if (data.customParts != null) {
+    result.customParts = {};
+    for (const key in data.customParts) {
+      const obj = data.customParts[key];
+      result.customParts[key] = {
+        extends: obj.extends,
+        properties: { ...obj.properties },
+      };
+    }
+  }
+  return result;
+}
+
+/**
+ * Minimize a map represented as array.
+ */
+function minimizeMapArray(
+  array: Array<Array<number | string>>,
+): Array<Array<number | string>> {
+  const result = [];
+  for (const row of array) {
+    let { length } = row;
+    // 右端の0を消していく
+    while (length > 0 && row[length - 1] === 0) {
+      length--;
+    }
+    result.push(row.slice(0, length));
+  }
+  // 空の行を消していく
+  let { length } = result;
+  while (length > 0 && result[length - 1].length === 0) {
+    length--;
+  }
+  result.length = length;
   return result;
 }
 
