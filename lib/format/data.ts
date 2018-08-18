@@ -20,7 +20,7 @@ export interface AdvancedMap {
   customParts?: Record<
     string,
     {
-      extends: string;
+      extends: number | string;
       properties: Record<string, any>;
     }
   >;
