@@ -218,7 +218,9 @@ setTimeout(function(){
     // 通信開始
     document.body.appendChild(iframe);
     setTimeout(() => {
-      iframe.contentWindow.postMessage('ping', '*');
+      if (iframe.contentWindow != null) {
+        iframe.contentWindow.postMessage('ping', '*');
+      }
     }, 250);
   }).then(result => {
     document.body.removeChild(iframe);
