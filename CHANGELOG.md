@@ -1,3 +1,6 @@
+# v0.1.11
+- Fixed the bug that `format.sanitizeAdvancedMap` removed custom parts definitions.
+
 # v0.1.10
 - Added `customParts` module.
 
