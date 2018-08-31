@@ -17,13 +17,7 @@ export type MasaoJSONFormatVersion =
   | 'draft-4';
 export interface AdvancedMap {
   stages: Array<StageObject>;
-  customParts?: Record<
-    string,
-    {
-      extends: number | string;
-      properties: Record<string, any>;
-    }
-  >;
+  customParts?: Record<string, CustomPartsData>;
 }
 export interface StageObject {
   size: {
@@ -37,6 +31,10 @@ export interface LayerObject {
   type: 'main' | 'mapchip';
   src?: string;
   map: Array<Array<number | string>>;
+}
+export interface CustomPartsData {
+  extends: number | string;
+  properties: Record<string, any>;
 }
 
 //formatのversionを数字に

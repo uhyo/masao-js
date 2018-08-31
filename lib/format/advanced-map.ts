@@ -1,7 +1,9 @@
 import {
   AdvancedMap,
   MasaoJSONFormatVersion,
+  StageObject,
   LayerObject,
+  CustomPartsData,
   formatVersionToNumber,
 } from './data';
 
@@ -112,9 +114,79 @@ export function sanitizeAdvancedMap(
     };
   });
   // まだ何もない
-  const customParts = void 0;
+
   return {
     stages,
-    customParts,
+    customParts: makeCustomPartsData(stages, obj.customParts),
   };
+}
+
+/**
+ * カスタムパーツ定義のうち使用されているもの名前を列挙
+ */
+function filterCustomPartsName(
+  stages: Array<StageObject>,
+  customParts: Record<string, CustomPartsData>,
+): Set<string> {
+  const usedSet = new Set();
+
+  for (const { layers } of stages) {
+    for (const { type, map } of layers) {
+      if (type !== 'main') {
+        continue;
+      }
+      // メインレイヤーを探索
+      for (const row of map) {
+        for (const chip of row) {
+          if ('string' === typeof chip) {
+            // カスタムパーツだ
+            usedSet.add(chip);
+          }
+        }
+      }
+    }
+  }
+  // 使用されていないが他のベースになっているものも残す
+  let queue = Array.from(usedSet);
+  while (queue.length > 0) {
+    const newQueue: string[] = [];
+    for (const key of queue) {
+      const ext = customParts[key].extends;
+      if ('string' === typeof ext) {
+        if (!usedSet.has(ext)) {
+          // this is new.
+          usedSet.add(ext);
+          newQueue.push(ext);
+        }
+      }
+    }
+    queue = newQueue;
+  }
+  return usedSet;
+}
+
+/**
+ * Make custom parts data.
+ */
+function makeCustomPartsData(
+  stages: Array<StageObject>,
+  customParts: Record<string, CustomPartsData> | undefined,
+): Record<string, CustomPartsData> | undefined {
+  if (customParts == null) {
+    return undefined;
+  }
+  const usedCustomPartsKeys = filterCustomPartsName(stages, customParts);
+  const customPartsKeys = Object.keys(customParts).filter(k =>
+    usedCustomPartsKeys.has(k),
+  );
+  if (customPartsKeys.length === 0) {
+    // empty!
+    return undefined;
+  }
+  const result: Record<string, CustomPartsData> = {};
+  for (const k of customPartsKeys) {
+    result[k] = customParts[k];
+  }
+
+  return result;
 }
