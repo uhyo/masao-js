@@ -1,4 +1,4 @@
-# masao v0.1.9
+# masao v0.1.10
 
 ```sh
 npm install masao
@@ -58,6 +58,23 @@ Throws if the data is invalid.
 Extract masao-json-format game object for given HTML string.
 Requires JavaScript APIs on browsers.
 Returns Promise.
+
+## masao.customParts.customPartsProperties
+Dictonary of available custom properties for each chip code.
+
+```js
+customPartsProperties = {
+  5100: {
+    walk_speed: {
+      type: 'integer',
+      unit: 'px/f',
+      description: '歩く速度',
+      default: 3,
+    },
+  },
+  /* ... */
+};
+```
 
 # License
 MIT

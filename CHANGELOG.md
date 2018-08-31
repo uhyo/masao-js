@@ -1,3 +1,6 @@
+# v0.1.10
+- Added `customParts` module.
+
 # v0.1.9
 - Added `param.minimizeAdvancedData` function.
 - `format.load` now allows minimized advanced-map data. Previously it was required that map and layer arrays have an exact width×height shape.
