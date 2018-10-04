@@ -1,3 +1,6 @@
+# v0.1.12
+- Added `isFXOrLater` parameter to `param.minimizeMapData`.
+
 # v0.1.11
 - Fixed the bug that `format.sanitizeAdvancedMap` removed custom parts definitions.
 
