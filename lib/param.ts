@@ -351,8 +351,13 @@ export function cutUnadvancedData(params: Params): Params {
 
 /**
  * Minimizes map params and returns a new params object.
+ * @param params object
+ * @param isFXOrLater whether this params are for FX or later. This enables additional minimization.
  */
-export function minimizeMapData(params: Params): Params {
+export function minimizeMapData(
+  params: Params,
+  isFXOrLater: boolean = false,
+): Params {
   const result: Params = {};
   // まず関係ないparamたちをコピー
   for (const key in params) {
@@ -379,10 +384,23 @@ export function minimizeMapData(params: Params): Params {
       while (length > 0 && allmap[length - 1] === '.') {
         length--;
       }
-      if (length > 0) {
-        // このマップは空白ではない
-        emptyflg = false;
-        // 書き込む
+      if (isFXOrLater) {
+        if (length > 0) {
+          // このマップは空白ではない
+          emptyflg = false;
+          // 書き込む
+          if (length > 120) {
+            result[`map0-${i}${prefix}`] = allmap.slice(0, 60);
+            result[`map1-${i}${prefix}`] = allmap.slice(60, 120);
+            result[`map2-${i}${prefix}`] = allmap.slice(120, length);
+          } else if (length > 60) {
+            result[`map0-${i}${prefix}`] = allmap.slice(0, 60);
+            result[`map1-${i}${prefix}`] = allmap.slice(60, length);
+          } else {
+            result[`map0-${i}${prefix}`] = allmap.slice(0, length);
+          }
+        }
+      } else {
         if (length > 120) {
           result[`map0-${i}${prefix}`] = allmap.slice(0, 60);
           result[`map1-${i}${prefix}`] = allmap.slice(60, 120);
@@ -390,12 +408,15 @@ export function minimizeMapData(params: Params): Params {
         } else if (length > 60) {
           result[`map0-${i}${prefix}`] = allmap.slice(0, 60);
           result[`map1-${i}${prefix}`] = allmap.slice(60, length);
+          result[`map2-${i}${prefix}`] = '';
         } else {
           result[`map0-${i}${prefix}`] = allmap.slice(0, length);
+          result[`map1-${i}${prefix}`] = '';
+          result[`map2-${i}${prefix}`] = '';
         }
       }
     }
-    if (emptyflg && prefix === '') {
+    if (isFXOrLater && emptyflg && prefix === '') {
       // ステージ1が完全にemptyだとサンプルステージ1になってしまう
       result['map0-0'] = '..';
     }
