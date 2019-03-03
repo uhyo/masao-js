@@ -52,6 +52,8 @@ export type Data =
   | LayerData
   | ChizuData;
 
+declare const require: any;
+
 export const data: Record<string, Data> = require('../data/params.json');
 
 const athletics: {

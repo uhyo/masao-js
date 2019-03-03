@@ -20,7 +20,8 @@ export {
   sanitizeAdvancedMap,
 };
 
-//format
+// require masao-json-format schema.
+declare const require: any;
 const schema = require('./format-schema.json');
 
 export interface LoadOptions {
@@ -91,9 +92,9 @@ export function load(obj: any, options?: LoadOptions): MasaoJSONFormat {
  *   },
  *   script: string
  *   "advanced-map": {
- *     
+ *
  *   }
- * }   
+ * }
  */
 export interface MakeOptions {
   params: MasaoJSONFormat['params'];
