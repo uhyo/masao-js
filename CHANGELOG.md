@@ -1,3 +1,7 @@
+# v0.2.0
+- `playlog.parse` now takes `ArrayBuffer` instead of `Buffer`.
+- Provides ESModule build via `module` field of `package.json`.
+
 # v0.1.12
 - Added `isFXOrLater` parameter to `param.minimizeMapData`.
 
