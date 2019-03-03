@@ -54,12 +54,12 @@ export type Data =
 
 declare const require: any;
 
-export const data: Record<string, Data> = require('../data/params.json');
+export const data: Record<string, Data> = require('../dist-data/params.json');
 
 const athletics: {
   names: Array<string>;
   values: Array<{ value: string; description: string }>;
-} = require('../data/athletics.json');
+} = require('../dist-data/athletics.json');
 // athletics関係
 for (const n of athletics.names) {
   (data[n] as EnumData).enumValues.push(...athletics.values);

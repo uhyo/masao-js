@@ -22,7 +22,7 @@ export {
 
 // require masao-json-format schema.
 declare const require: any;
-const schema = require('./format-schema.json');
+const schema = require('../dist-data/format-schema.json');
 
 export interface LoadOptions {
   throwError?: boolean;

@@ -1,5 +1,6 @@
 dist/
 dist-esm/
+dist-data/
 node_modules
 *.swp
 *.swo
